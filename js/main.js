@@ -1,4 +1,4 @@
-
+var is_safari = navigator.userAgent.indexOf("safari") > -1;
 let oscurece= document.querySelector("#oscurece");
 let oscurece2= document.querySelector("#oscurece2");
 let oscurece3= document.querySelector("#oscurece3");
@@ -6,6 +6,7 @@ let principalText= document.querySelectorAll(".principalText")
 let push=0;
 let contador=0;
 let widthWindow=window.innerWidth;
+if( is_safari==false){
  window.addEventListener("scroll",function(e){
     let offset = window.pageYOffset;
     let flecha = document.querySelector(".flecha")
@@ -73,7 +74,7 @@ let widthWindow=window.innerWidth;
    
   
 })  
-
+}
 let verMas=document.querySelectorAll(".verMas");
 let principalTextP=document.querySelectorAll(".principalText p");
 let verMenos=document.querySelectorAll(".verMenos")
@@ -109,4 +110,6 @@ for(let i=0;i<verMas.length;i++){
         
     })
 }
+
+
 

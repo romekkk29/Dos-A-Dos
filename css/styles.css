@@ -10,11 +10,11 @@
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
-  background-size: cover;
-  transition: all 0.5 ease-in-out;
-  background-position: center;
-  background-attachment:fixed;
-  position: relative;
+    background-size: cover;
+    transition: all 0.5 ease-in-out;
+      background-position: center;
+     background-attachment:fixed;
+    position: relative;
 }
 .imagen2{
     width: 100vw;
@@ -25,7 +25,7 @@
     background-attachment:fixed;
     background-position: center;
     position: relative;
-    ;
+    
 }
 .i1{
     background-image: url("../img/8.svg");
