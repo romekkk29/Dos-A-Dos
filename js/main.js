@@ -1,4 +1,6 @@
-var is_safari = navigator.userAgent.indexOf("safari");
+
+var is_safari2 = navigator.userAgent.toLowerCase();
+var is_safari=  is_safari2.indexOf("safari");
 let oscurece= document.querySelector("#oscurece");
 let oscurece2= document.querySelector("#oscurece2");
 let oscurece3= document.querySelector("#oscurece3");
