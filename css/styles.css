@@ -81,21 +81,22 @@
     width: 100%;
     position: absolute;
     width: 550px;
-    margin-left: 10%;
-    margin-top: 30%;
+    right:0px ;
+    bottom: 0px;
     z-index: 2;
     transition: all 0.8s ease-in;
     border-radius: 20px;
     padding: 20px;
     z-index: 123123;
     backdrop-filter: blur(4px);
+    
+    bottom: 5px;
 }
 .uno{
-    margin-top: 22%;
-    margin-left: 50%;
+ 
 }
 .tres{
-    margin-left: 50%;
+    left: 0px;
     
 }
 .principalText p{

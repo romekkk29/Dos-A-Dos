@@ -1,4 +1,4 @@
-var is_safari = navigator.userAgent.indexOf("safari") > -1;
+var is_safari = navigator.userAgent.indexOf("safari");
 let oscurece= document.querySelector("#oscurece");
 let oscurece2= document.querySelector("#oscurece2");
 let oscurece3= document.querySelector("#oscurece3");
@@ -6,7 +6,7 @@ let principalText= document.querySelectorAll(".principalText")
 let push=0;
 let contador=0;
 let widthWindow=window.innerWidth;
-if( is_safari==false){
+if( is_safari==-1){
  window.addEventListener("scroll",function(e){
     let offset = window.pageYOffset;
     let flecha = document.querySelector(".flecha")
@@ -16,11 +16,12 @@ if( is_safari==false){
   
     contador--;
     let diff=offset-push;
-    let contador2=contador+2
+    let contador2=contador/2+2;
+    let contador1=contador/2
     push=offset
-    let contador3=contador/2.5;
-    let contador4=contador2/2;
-    let y="translateY("+contador+"px)"
+    let contador3=contador/4;
+    let contador4=contador2/4;
+    let y="translateY("+contador1+"px)"
     let y2="translateY("+contador2+"px)"
     let y3="translateY("+contador3+"px)"
     let y4="translateY("+contador4+"px)"
