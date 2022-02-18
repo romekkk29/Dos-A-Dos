@@ -28,7 +28,7 @@
     ;
 }
 .i1{
-    background-image: url("/img/8.svg");
+    background-image: url("../img/8.svg");
 }
 .i2 img{
    width: 100%;
@@ -36,10 +36,10 @@
    object-fit: cover ;
 }
 .i2{
-    background-image: url("/img/8.svg");
+    background-image: url("../img/8.svg");
 }
 .i3{
-    background-image: url("/img/8.svg");
+    background-image: url("../img/8.svg");
 }
 
 #oscurece{
