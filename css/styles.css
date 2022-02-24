@@ -2,9 +2,287 @@
 
 *{
     margin: 0px;
-  overflow-x: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+/* HEADER */
+
+header{
+    position: fixed;
+    z-index: 121231233;
+    top: 0px;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.35);
+    backdrop-filter: blur(1px);
+    
+}
+h1{
+    margin-left: 70px;
+    opacity: 0.85;
+}
+h1:hover{
+  opacity: 1;
+}
+.navMobile{
+    display: none;
+}
+.navMobile{
+    margin-right: 15px;
+}
+#oscuridadMobile{
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(1px);
+    margin-left: 100% ;
+    z-index: 1231231231232;
+    margin-top: 56px;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#oscuridadMobile ul{
+    padding-left: 0px;
+    margin-top: 20vh;
+    text-align: center;
+ 
+    margin-top: -120px;
+}
+#oscuridadMobile li{
+   
+    margin: 20px auto;
+  
+}
+.navDesktop{
+    margin: 0px 50px
+}
+.navDesktop ul{
+    display: flex;
+}
+.navDesktop ul li a{
+    color: white;
+    margin: 0px 20px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-family: "Oskari G2";
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    z-index: 21312321321313;
+    opacity: 0.75;
+}
+#oscuridadMobile ul li a{
+    color: white;
+    margin: 5px 0px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-family: "Oskari G2";
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    z-index: 21312321321313;
+    opacity: 0.75;
+}
+#proyects44{
+    margin-top: -20px;
+    margin-bottom: -10px;
+    transform: scaleY(0);
+    transform-origin: top left;
+    transition: transform 1s ease;
+    position: absolute;
+    margin-left: -25px;
+ 
+}
+#proyects44 h2{
+    margin: 10px auto;
+}
+#oscuridadMobile a{
+    text-decoration: none;
+}
+#oscuridadMobile a h2{
+    color: white;
+    position: relative;
+    font-family: "Oskari G2";
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    z-index: 21312321321313;
+    opacity: 0.75;
+}
+.navDesktop ul li a:after{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #0085FF;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.6s ease;
+}
+.navDesktop ul li .estamosAqui:after{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #0085FF;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    transition: transform 0.6s ease;
+
+}
+#sopaA::after{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #0085FF;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.navDesktop ul li a:hover{
+    opacity: 0.89;
+}
+.navDesktop ul li a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#sopaA{
+    opacity: 1;
+}
+#proyectsDown2{
+    width: 10px;
+    margin-left: -14px;
+    cursor: pointer;
+    margin-bottom: 2px ;
+}
+#proyectsDown22{
+    width: 10px;
+    margin-left: 8px;
+    cursor: pointer;
+    margin-bottom: 7px ;
+}
+#proyectsDown3{
+    width: 10px;
+    margin-left: -14px;
+    cursor: pointer;
+    margin-bottom: 2px ;
+    transform: rotate(180deg);
+}
+#proyectsDown33{
+    width: 10px;
+    margin-left: 8px;
+    cursor: pointer;
+    margin-bottom: 7px ;
+    transform: rotate(180deg);
+}
+#clickProyects{
+    transition: all 0.5s ease;
+}
+#clickProyects22{
+    transition: all 0.5s ease;
+    margin-left: 10px;
+}
+.sopa22 a::after{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #0085FF;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+#sacameContact{
+    position: absolute;
+    margin-left: 10px !important;
+    margin-top: -5px !important;
+}
+/* HEADER proyects*/
+#proyects{
+    position: fixed;
+    width: 130px;
+    background-color: rgba(0,0,0,0.35);
+    backdrop-filter: blur(1px);
+    z-index: 121321;
+    right: 170px;
+    top:56px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-top: 0%;
+    transition: all 0.6s ease;
+    transform-origin: top ;
+    transform: scaleY(0) ;
+}
+.hidden2{
+    visibility: hidden;
+}
+.sopa{
+    z-index: 213213123123123213123123123;
+}
+#proyects div{
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#proyects div a{
+    text-decoration: none;
+   
+}
+#proyects div a h2{
+    text-align: center;
+     position: relative;
+}
+#proyects div a h2:after{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #0085FF;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.6s ease;
+  
+}
+#proyects div a h2:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#proyects div h2{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+    z-index: 21312321321313;
+    opacity: 0.85;
+
+}
+
+
+
+/* IMAGENES */
 
 .imagen{
     width: 100vw;
@@ -12,9 +290,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.5 ease-in-out;
-      background-position: center;
-     background-attachment:fixed;
+    background-position: center;
+    background-attachment:fixed;
     position: relative;
+    background-image: url("../img/8.svg");
 }
 .imagen2{
     width: 100vw;
@@ -25,22 +304,35 @@
     background-attachment:fixed;
     background-position: center;
     position: relative;
-    
+    background-image: url("../img/8.svg");
 }
 .i1{
-    background-image: url("../img/8.svg");
-}
-.i2 img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover ;
+height: 100vh;
+background-image: url("../img/nosotros/image86.svg");
 }
 .i2{
-    background-image: url("../img/8.svg");
+    height: 100vh;
+    background-image: url("../img/nosotros/image87.svg");
 }
 .i3{
-    background-image: url("../img/8.svg");
+    height: 100vh;
+    background-image: url("../img/nosotros/image88.svg");
 }
+.i4{
+    height: 100vh;
+    background-image: url("../img/nosotros/image89.svg");
+}
+.i5{
+    height: 100vh;
+    background-image: url("../img/nosotros/image90.svg");
+}
+.i6{
+      height: 100vh;
+      background-position-y: top;
+    background-image: url("../img/nosotros/image91.svg");
+}
+
+/* OSCURIDAD PARALAX */
 
 #oscurece{
     background-color: black;
@@ -65,113 +357,240 @@
     height: 100%;
 }
 
+
+/* FLECHA UP */
 .flecha{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     position: fixed;
     bottom: 20px;
-    right: -100%;
+    right: -10%;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.8s ease-in-out;
     z-index: 213213123;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    border: solid 2.5px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+
+
+/* TEXTOS  EN LAS IMAGENES*/
+
 .principalText{
-    width: 100%;
     position: absolute;
-    width: 550px;
+    width: 517px;
+    height: auto;
     right:0px ;
-    bottom: 0px;
-    z-index: 2;
     transition: all 0.8s ease-in;
     border-radius: 20px;
     padding: 20px;
-    z-index: 123123;
-    backdrop-filter: blur(4px);
-    
-    bottom: 5px;
+    z-index: 13;
+
+    bottom: 70px;
+    left: 50px;
 }
-.uno{
- 
-}
-.tres{
-    left: 0px;
-    
-}
-.principalText p{
+
+.pText{
     padding: 25px 0px;
     font-size: 16px;
-    font-weight: 600;
-    color:rgba(255,255,255,0.8);
+    font-weight: 400;
+    color:rgb(255,255,255);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    line-height: 26px;
+    line-height: 24px;
     z-index: 3;
-    
-    
+    text-shadow:  2px 2px 4px black;
+    transition: all 0.6s ease;
+    transform: scaleY(0);
+    transform-origin: bottom right;
+}
+.textoH4{
+    color: #fff;;
+    font-size: 44px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-shadow:  1px 1px 2px black;
+    transition: all 0.7s ease;
+    transform: scaleY(0);
+    transform-origin: bottom right;
+}
+.verProyecto{
+    width: 120px;
+    height: 38px;
+    background-color: rgba(0,0,0,0);
+    text-decoration: none;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.verProyecto h3 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    position: relative;
+    opacity: 0.75;
 
 }
-h4{
-    color: #fff;;
-    font-size: 46px;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: 65px;
+.verProyecto h3:hover{
+    opacity: 0.95;
 }
+.verProyecto h3:after{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #0085FF;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.6s ease;
+  
+}
+.verProyecto h3:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.signoMas{
+    width: 38px;
+    height: 38px;
+    background-color: rgba(0,0,0,0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.signoMas img{
+    width: 15px;
+    height: 15px;
+}
+.signoMenos{
+    width: 38px;
+    height: 38px;
+    background-color: rgba(0,0,0,0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.signoMenos img{
+    width: 15px;
+    height: 15px;
+}
+.divMas{
+    display: flex;
+}
+.tituloMas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    transition: all 0.9s ease;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    z-index: 213123213123;
+}
+.tituloMas h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 20px;
+    opacity: 0.75;
+    text-shadow: none;
+    color: #fff;;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+}
+.tituloMas h4:hover{
+    opacity: 1
+}
+
+
+
+
+
+/* CLASE HIDDEN IMPORTANT*/
 .hidden{
     display: none;
 }
-.verMas{
-    display: none;
-}
-@media all and (max-width: 750px){
+
+
+
+
+/* MEDIA QUERIES */
+
+@media all and (max-width:900px){
+
+    .navDesktop{
+                display: none;
+    }
+    .navMobile{
+                display: flex;
+    }
+    h1{
+        margin-left: 20px;
+    }
     .flecha{
+        right: -15%;
         width: 40px;
         height: 40px;
-        bottom: 12px;
     }
-    
     .principalText{
-        width: 60%;
-        margin-left:5%;
-        margin-top: 65vh;
+        left: 0px;
+        width: 300px ;
     }
-    .uno{
-        margin-left:5%;
-        margin-top: 55vh;
-    }
-    h4{
-        font-size: 30px;
-        line-height: 46px;
-    }
-    .principalText p{
+    .tituloMas{
         display: none;
+    }
+    .pText{
         font-size: 12px;
         line-height: 16px;
-        padding: 5px 0px;
+        padding: 10px 0px;
     }
-    button{
-        margin-top: 20px;
-        background-color: rgba(255,255,255,0);
+    .textoH4{
+        font-size: 32px;
     }
+    .imagen2{
+        background-attachment:initial;
+        height: 100vh;
+    }
+    .i1{
+        background-size: contain;
+     
+       
+    }
+    .i2{
+        background-size: contain;
     
-    .verMenos{
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        right: 20px;
-        bottom: 20px;
-        background-color: rgba(255,255,255,0);
-        background-image: url("../img/flecha2.png");
-        background-repeat: no-repeat;
-        background-position: center;
     }
-    .verMas{
-        display: block;
-    }
-    .verProyecto{
-        display: none;
-    }
+    .i3{
+        background-size: contain;
+
+    } 
+    .i4{
+        background-size: contain;
     
+    }
+    .i5{
+        background-size: contain;
+       
+    }
+    .i6{
+        background-size: contain;
+        
+    }
+
 }
