@@ -217,20 +217,23 @@ h1:hover{
     margin-top: -5px !important;
 }
 /* HEADER proyects*/
-#proyects{
+#proyectsFather{
     position: fixed;
     width: 130px;
-    background-color: rgba(0,0,0,0.35);
-    backdrop-filter: blur(1px);
-    z-index: 121321;
+    z-index: 3;
     right: 170px;
     top:56px;
+    height: 390px;
+    margin-top: 0%;
+}
+#proyects{
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-    margin-top: 0%;
-    transition: all 0.6s ease;
+    background-color: rgba(0,0,0,0.35);
+    backdrop-filter: blur(1px);
+    transform: translateY(-100%);
+    transition: all 1.3s ease;
     transform-origin: top ;
-    transform: scaleY(0) ;
 }
 .hidden2{
     visibility: hidden;
@@ -293,7 +296,7 @@ h1:hover{
     background-position: center;
     background-attachment:fixed;
     position: relative;
-    background-image: url("../img/8.svg");
+    background-image: url("../img/home/3.svg");
 }
 .imagen2{
     width: 100vw;
@@ -306,9 +309,15 @@ h1:hover{
     position: relative;
     background-image: url("../img/8.svg");
 }
+.home2{
+    background-image: url("../img/home/1.svg");
+}
+.home3{
+    background-image: url("../img/home/3.svg");
+}
 .i1{
-height: 100vh;
-background-image: url("../img/nosotros/image86.svg");
+    height: 100vh;
+    background-image: url("../img/nosotros/image86.svg");
 }
 .i2{
     height: 100vh;
@@ -385,15 +394,24 @@ background-image: url("../img/nosotros/image86.svg");
 .principalText{
     position: absolute;
     width: 517px;
-    height: auto;
     right:0px ;
     transition: all 0.8s ease-in;
     border-radius: 20px;
-    padding: 20px;
     z-index: 13;
-
-    bottom: 70px;
-    left: 50px;
+    height: 300px;
+    bottom: 90px;
+    left: 70px;
+}
+.divMas{
+    display: flex;
+    position: absolute;
+    bottom: 90px;
+    left: 70px;
+    z-index: 213;
+}
+.cambiaHeight{
+    height: 250px;
+    overflow-y: hidden;
 }
 
 .pText{
@@ -406,8 +424,9 @@ background-image: url("../img/nosotros/image86.svg");
     z-index: 3;
     text-shadow:  2px 2px 4px black;
     transition: all 0.6s ease;
-    transform: scaleY(0);
+    transform: translateY(200px);
     transform-origin: bottom right;
+    overflow-y: hidden;
 }
 .textoH4{
     color: #fff;;
@@ -416,13 +435,16 @@ background-image: url("../img/nosotros/image86.svg");
     font-weight: 600;
     text-shadow:  1px 1px 2px black;
     transition: all 0.7s ease;
-    transform: scaleY(0);
+    transform: translateY(250px);
     transform-origin: bottom right;
+    z-index: -2;
+    overflow-y: hidden;
 }
+
 .verProyecto{
     width: 120px;
     height: 38px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.45);
     text-decoration: none;
     text-align: center;
     backdrop-filter: blur(10px);
@@ -489,9 +511,7 @@ background-image: url("../img/nosotros/image86.svg");
     width: 15px;
     height: 15px;
 }
-.divMas{
-    display: flex;
-}
+
 .tituloMas{
     display: flex;
     justify-content: center;
@@ -502,13 +522,12 @@ background-image: url("../img/nosotros/image86.svg");
     transition: all 0.9s ease;
     transform: scaleX(1);
     transform-origin: bottom left;
-    z-index: 213123213123;
+    z-index: -1;
 }
 .tituloMas h4{
     font-size: 20px;
     font-weight: 600;
     padding: 0px 20px;
-    opacity: 0.75;
     text-shadow: none;
     color: #fff;;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -520,7 +539,22 @@ background-image: url("../img/nosotros/image86.svg");
 
 
 
+/* MOBILE NOSOTROS*/
+.mobileNosotros{
+    display: none;
+    margin: 0px;
 
+}
+.mobileNosotros img{
+    width: 100vw;
+    height: 105vh;
+    object-fit:cover;
+    margin: 0px;
+
+}
+.mobileNosotros section{
+    margin-bottom: -6px;
+}
 
 /* CLASE HIDDEN IMPORTANT*/
 .hidden{
@@ -563,34 +597,26 @@ background-image: url("../img/nosotros/image86.svg");
     .textoH4{
         font-size: 32px;
     }
-    .imagen2{
-        background-attachment:initial;
-        height: 100vh;
-    }
     .i1{
-        background-size: contain;
-     
-       
+        display: none;
     }
     .i2{
-        background-size: contain;
-    
+        display: none;
     }
     .i3{
-        background-size: contain;
-
-    } 
+        display: none;
+    }
     .i4{
-        background-size: contain;
-    
+        display: none;
     }
     .i5{
-        background-size: contain;
-       
+        display: none;
     }
     .i6{
-        background-size: contain;
-        
+        display: none;
+    }
+    .mobileNosotros{
+        display: block;
     }
 
 }

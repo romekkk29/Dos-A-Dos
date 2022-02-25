@@ -166,7 +166,7 @@ clickProyects.addEventListener("click",function(e){
     e.preventDefault();
     console.log("baja")
     //proyects.style.marginTop="0%";
-    proyects.style.transform="scaleY(1)";
+    proyects.style.transform="translateY(0%)";
     clickProyects.classList.add("hidden")
     clickProyects2.classList.remove("hidden")
     
@@ -176,7 +176,7 @@ clickProyects2.addEventListener("click",function(e){7
     e.preventDefault();
     console.log("sube")
     //proyects.style.marginTop="-30%";
-    proyects.style.transform="scaleY(0)";
+    proyects.style.transform="translateY(-100%)";
     clickProyects2.classList.add("hidden")
     clickProyects.classList.remove("hidden")
 })
@@ -192,10 +192,9 @@ let tituloMas=document.querySelectorAll(".tituloMas")
 
 for(let i=0; i<signoMas.length;i++){
     signoMas[i].addEventListener("click", function(){
-        tituloMas[i].style.transition="all 0.7s ease";
-        textoH4[i].style.transform="scaleY(1)";
-        textoP[i].style.transform="scaleY(1)";
-        tituloMas[i].style.transform="scaleX(0)";
+        tituloMas[i].style.transform="scaleX(1) translate(-300px)";
+        textoH4[i].style.transform="translateY(0px)";
+        textoP[i].style.transform="translateY(0px)";
         signoMas[i].classList.add("hidden");
         signoMenos[i].classList.remove("hidden")
         tituloMas[i].style.backdropFilter="none"
@@ -203,10 +202,10 @@ for(let i=0; i<signoMas.length;i++){
 }
 for(let i=0;i<signoMenos.length;i++){
     signoMenos[i].addEventListener("click", function(){
-        textoH4[i].style.transform="scaleY(0)";
-        textoP[i].style.transform="scaleY(0)";
-        tituloMas[i].style.transition="all 0.4s ease";
-        tituloMas[i].style.transform="scaleX(1)";
+        textoH4[i].style.transform="translateY(250px)";
+        textoP[i].style.transform="translateY(200px)";
+        tituloMas[i].style.zIndex="-1";
+        tituloMas[i].style.transform="scaleX(1) translate(0px)";
         signoMas[i].classList.remove("hidden");
         signoMenos[i].classList.add("hidden");
         setTimeout(()=>{
