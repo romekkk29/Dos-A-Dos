@@ -296,7 +296,7 @@ h1:hover{
     background-position: center;
     background-attachment:fixed;
     position: relative;
-    background-image: url("../img/home/3.svg");
+    background-image: url("../img/home/2.jpg");
 }
 .imagen2{
     width: 100vw;
@@ -307,13 +307,13 @@ h1:hover{
     background-attachment:fixed;
     background-position: center;
     position: relative;
-    background-image: url("../img/8.svg");
+    background-image: url("../img/home/7.jpg");
 }
 .home2{
-    background-image: url("../img/home/1.svg");
+    background-image: url("../img/home/3.jpg");
 }
 .home3{
-    background-image: url("../img/home/3.svg");
+    background-image: url("../img/home/4.jpg");
 }
 .i1{
     height: 100vh;
