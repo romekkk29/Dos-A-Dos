@@ -225,6 +225,7 @@ h1:hover{
     top:56px;
     height: 390px;
     margin-top: 0%;
+    overflow-y: hidden;
 }
 #proyects{
     border-bottom-left-radius: 2px;
@@ -234,6 +235,7 @@ h1:hover{
     transform: translateY(-100%);
     transition: all 1.3s ease;
     transform-origin: top ;
+    overflow-y: hidden;
 }
 .hidden2{
     visibility: hidden;
