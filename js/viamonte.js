@@ -75,27 +75,27 @@ let flecha = document.querySelector(".flecha")
     if(diferencia1>1 && widthWindow<750){
         flecha.style.right="12px";
     }
-    if(offset>heightWindow){
+    if(offset>(heightWindow/2)){
         viamonte4.classList.add("viamonte4")
     }
-    if(offset>(heightWindow*2)){
+    if(offset>(heightWindow)){
         viamonte5.classList.add("viamonte5")
     }
-    if(offset>(heightWindow*3)){
+    if(offset>(heightWindow*2)){
         viamonte6.classList.add("viamonte6")
     }
-    if(offset>(heightWindow*4)){
+    if(offset>(heightWindow*3)){
         viamonte7.classList.add("viamonte7")
       
     }
-    if(offset>(heightWindow*5)){
+    if(offset>(heightWindow*4)){
         viamonte8.classList.add("viamonte8")
     }
-    if(offset>(heightWindow*6)){
+    if(offset>(heightWindow*5)){
         viamonte9.classList.add("viamonte9")
        
     }
-    if(offset>(heightWindow*7)){
+    if(offset>(heightWindow*6)){
         viamonte10.classList.add("viamonte10")
        
     }

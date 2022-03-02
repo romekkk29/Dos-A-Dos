@@ -85,16 +85,16 @@ window.addEventListener("scroll",function(){
             if(offset<offsetTop2){
                 card2.style.left="100%"
                }
-            if(offset>heightWindow){
+            if(offset>(heightWindow/2)){
                 i3.classList.add("i3")
             }
-            if(offset>(heightWindow*2)){
+            if(offset>(heightWindow)){
                 i4.classList.add("i4")
             }
-            if(offset>(heightWindow*3)){
+            if(offset>(heightWindow*2)){
                 i5.classList.add("i5")
             }
-            if(offset>(heightWindow*4)){
+            if(offset>(heightWindow*3)){
                 i6.classList.add("i6")
               
             }
