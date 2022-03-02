@@ -18,7 +18,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0,0,0,0.35);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(2px);
     
 }
 h1{
@@ -219,9 +219,9 @@ h1:hover{
 /* HEADER proyects*/
 #proyectsFather{
     position: fixed;
-    width: 130px;
+    width: 135px;
     z-index: 3;
-    right: 170px;
+    right: 165px;
     top:56px;
     height: 390px;
     margin-top: 0%;
@@ -342,7 +342,36 @@ h1:hover{
       background-position-y: top;
     background-image: url("../img/nosotros/image91.svg");
 }
-
+.viamonte1{
+    background-image: url("../img/viamonte/2.svg");
+}
+.viamonte2{
+    background-image: url("../img/viamonte/3.svg");
+}
+.viamonte3{
+    background-image: url("../img/viamonte/4.svg");
+}
+.viamonte4{
+    background-image: url("../img/viamonte/v4.webp");
+}
+.viamonte5{
+    background-image: url("../img/viamonte/v5.webp");
+}
+.viamonte6{
+    background-image: url("../img/viamonte/v6.webp");
+}
+.viamonte7{
+    background-image: url("../img/viamonte/v7.webp");
+}
+.viamonte8{
+    background-image: url("../img/viamonte/v8.webp");
+}
+.viamonte9{
+    background-image: url("../img/viamonte/v9.webp");
+}
+.viamonte10{
+    background-image: url("../img/viamonte/v10.webp");
+}
 /* OSCURIDAD PARALAX */
 
 #oscurece{
@@ -386,6 +415,9 @@ h1:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.flecha:hover{
+    background-color: #0085FF;
 }
 
 
@@ -542,22 +574,173 @@ h1:hover{
 
 
 
-/* MOBILE NOSOTROS*/
-.mobileNosotros{
+
+
+/* NOSOTROS */
+
+.textNosotros{
+    text-align: center;
+}
+.textNosotros img{
+    background-color: white;
+    margin-top: 103px;
+    margin-bottom: 39px;
+    padding: 10px;
+}
+.textNosotros img:hover{
+    transition: all 0.5s ease;
+  transform: skew(15deg) scale(1.1) ;
+}
+.textNosotros p{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    font-family: "Oskari G2";
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin: 20px 25% ;
+    text-align: center;
+}
+.textNosotros p:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+.weCard{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+    width: 350px;
+    transition: all 1s ease;
+    position: relative;
+    left: -100%;
+}
+.nosotrosCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.socios h5 {
+    font-family: "Oskari G2";
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 36px;
+    text-align: center;
+}
+.socios h5:hover{
+    text-decoration: underline;
+}
+.weCard h3{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.weCard a {
+    margin-top: 10px;
+    overflow: hidden;
+}
+.weCard a img:hover{
+
+    border-radius: 50%;
+    background-color: #0085FF;
+    transition: all 0.5s ease ;
+}
+.weCard p{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.maginTop20{
+    margin-top: -50px;
+}
+.weCard2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+    width: 350px;
+    transition: all 1s ease;
+    position: relative;
+    left: 100%;
+}
+.weCard2 h3{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.weCard2 a {
+    margin-top: 10px;
+    overflow: hidden;
+}
+.weCard2 a img:hover{
+
+    border-radius: 50%;
+    background-color: #0085FF;
+    transition: all 0.5s ease ;
+}
+.weCard2 p{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+
+
+/* FOOTER*/
+
+footer{
+    height: 172px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+footer p{
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+footer h5{
+    color: white;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 30px;
+}
+.footerP{
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 14px;
+    margin-right: 50px;
+}
+.footerNeedMargin{
+    margin-bottom: -20px;
+
+}
+.footerLogo{
+    margin-left: 75px;
+}
+.needHidden{
     display: none;
-    margin: 0px;
+    margin-top: 5px;
+}
 
-}
-.mobileNosotros img{
-    width: 100vw;
-    height: 105vh;
-    object-fit:cover;
-    margin: 0px;
 
-}
-.mobileNosotros section{
-    margin-bottom: -6px;
-}
+
+
+
+
 
 /* CLASE HIDDEN IMPORTANT*/
 .hidden{
@@ -566,9 +749,41 @@ h1:hover{
 
 
 
-
 /* MEDIA QUERIES */
+@media all and (max-width:1200px){
 
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #141414;
+        height: 334px;
+    }
+    .needHidden{
+        display: block;
+    }
+    .notNeedHidden{
+        display: none;
+    }
+    footer div{
+        margin-left: 20px;
+    }
+    .footerLogo{
+        margin-top: 40px;
+    }
+    footer h5{
+        top: 100px
+    }
+    .footerNeedMargin p{
+        margin-top: 5px;
+    }
+    .footerNeedMargin2{
+        margin-bottom: 30px;
+    }
+    .footerLogo{
+        margin-left: 20px;
+    }
+
+}
 @media all and (max-width:900px){
 
     .navDesktop{
@@ -605,26 +820,18 @@ h1:hover{
     .textoH4{
         font-size: 32px;
     }
-    .i1{
-        display: none;
+    .imagen2{
+        height: 110vh;
+        margin-top: -10px;
+        background-attachment: scroll;
     }
-    .i2{
-        display: none;
+    .nosotrosCards{
+        flex-direction: column;
     }
-    .i3{
-        display: none;
+    .textNosotros p{
+       margin: 20px 8%
     }
-    .i4{
-        display: none;
-    }
-    .i5{
-        display: none;
-    }
-    .i6{
-        display: none;
-    }
-    .mobileNosotros{
-        display: block;
-    }
+    
 
 }
+

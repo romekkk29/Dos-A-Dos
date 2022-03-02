@@ -1,87 +1,3 @@
-
-/* var navigatorr = navigator.userAgent.toLowerCase();
-var is_chrome=  navigatorr.indexOf("chrome");
-var is_firefox=  navigatorr.indexOf("firefox");
-let oscurece= document.querySelector("#oscurece");
-let oscurece2= document.querySelector("#oscurece2");
-let oscurece3= document.querySelector("#oscurece3");
-let principalText= document.querySelectorAll(".principalText")
-let push=0;
-let contador=0;
-let widthWindow=window.innerWidth; */
-/* if(is_chrome || is_firefox){
- window.addEventListener("scroll",function(e){
-    let offset = window.pageYOffset;
-    let flecha = document.querySelector(".flecha")
-    let heightWindow= window.innerHeight+150;
-    let heightWindow33= window.innerHeight;
-    let diferencia1= (offset/heightWindow);
-  
-    contador--;
-    let diff=offset-push;
-    let contador2=contador/2+2;
-    let contador1=contador/2
-    push=offset
-    let contador3=contador/4;
-    let contador4=contador2/4;
-    let y="translateY("+contador1+"px)"
-    let y2="translateY("+contador2+"px)"
-    let y3="translateY("+contador3+"px)"
-    let y4="translateY("+contador4+"px)"
-    for(let i=0;i<principalText.length;i++){
-    
-        if(diff>0 && widthWindow>750){
-            principalText[i].style.transform=y
-        }
-        if(diff<0  && widthWindow>750){
-            principalText[i].style.transform=y2
-            contador=contador2
-        }
-        if(diff>0 && widthWindow<750){
-            principalText[i].style.transform=y3
-        }
-        if(diff<0  && widthWindow<750){
-            principalText[i].style.transform=y4
-            contador=contador2
-        }
-    
-    }
-    
-    
-    if(offset<5){
-        flecha.style.right="-100%";
-    }
-    if(diferencia1>0 && widthWindow>750){
-        oscurece.style.opacity=diferencia1
-        flecha.style.right="20px";
-      
-    }
-    if(diferencia1>0 && widthWindow<750){
-        oscurece.style.opacity=diferencia1
-        flecha.style.right="12px";
-    }
-  
-    if(offset>heightWindow33){
-       let offset2= offset-heightWindow;
-        let diferencia2= (offset2/(heightWindow));
-       
-        oscurece2.style.opacity=diferencia2
-
-    }
-   
-    if(offset>heightWindow33*2){
-        let offset3= offset-heightWindow*2;
-        let diferencia3= (offset3/(heightWindow));
-    
-        oscurece3.style.opacity=diferencia3
-    }
-   
-  
-})  
-} */
-
-
-
 //menu hamburgueso
 let menuHamburgueso=document.querySelector("#menuHamburgueso");
 let cruzHambugueso=document.querySelector("#cruzHamburgueso");
@@ -127,16 +43,11 @@ sopa22.addEventListener("click",function(e){
     body.style.overflowY="scroll"
     setTimeout( ()=>{  proyects44.classList.add("hidden");   sacameContact.classList.remove("hidden")},1000)
 })
-
-
-
-
-
 //flechaUp 
 let flecha = document.querySelector(".flecha")
-
-  window.addEventListener("scroll",function(){
- 
+window.addEventListener("scroll",function(){
+    let weCard= document.querySelectorAll(".weCard");
+    let weCard2= document.querySelectorAll(".weCard2");
     let widthWindow=window.innerWidth; 
     let offset = window.pageYOffset;
     let heightWindow= window.innerHeight/2;
@@ -154,10 +65,27 @@ let flecha = document.querySelector(".flecha")
     if(diferencia1>1 && widthWindow<750){
         flecha.style.right="12px";
     }
-
+    weCard.forEach((card)=>{
+        weCard2.forEach((card2)=>{
+            let offsetTop= card.offsetTop-655
+            let offsetTop2= card2.offsetTop-655
+            if(offset>=offsetTop){
+                card.style.left="0%"
+            }
+            if(offset<offsetTop){
+             card.style.left="-100%"
+            }
+            if(offset>offsetTop2){
+                card2.style.left="0%"
+               }
+            if(offset<offsetTop2){
+                card2.style.left="100%"
+               }
+        }
+       
+        )
+        })
 })
-
-
 // click protects 
 
 let clickProyects= document.querySelector("#clickProyects");
@@ -217,6 +145,3 @@ for(let i=0;i<signoMenos.length;i++){
       
     })
 }
-
-
-
