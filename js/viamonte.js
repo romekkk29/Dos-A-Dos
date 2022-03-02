@@ -43,15 +43,22 @@ sopa22.addEventListener("click",function(e){
     body.style.overflowY="scroll"
     setTimeout( ()=>{  proyects44.classList.add("hidden");   sacameContact.classList.remove("hidden")},1000)
 })
+
+
+
+
+
 //flechaUp 
 let flecha = document.querySelector(".flecha")
-window.addEventListener("scroll",function(){
-    let i3=this.document.querySelector("#i3")
-    let i4=this.document.querySelector("#i4")
-    let i5=this.document.querySelector("#i5")
-    let i6=this.document.querySelector("#i6")
-    let weCard= document.querySelectorAll(".weCard");
-    let weCard2= document.querySelectorAll(".weCard2");
+
+  window.addEventListener("scroll",function(){
+    let viamonte4=this.document.querySelector("#viamonte4")
+    let viamonte5=this.document.querySelector("#viamonte5")
+    let viamonte6=this.document.querySelector("#viamonte6")
+    let viamonte7=this.document.querySelector("#viamonte7")
+    let viamonte8=this.document.querySelector("#viamonte8")
+    let viamonte9=this.document.querySelector("#viamonte9")
+    let viamonte10=this.document.querySelector("#viamonte10")
     let widthWindow=window.innerWidth; 
     let offset = window.pageYOffset;
     let heightWindow= window.innerHeight/2;
@@ -64,44 +71,38 @@ window.addEventListener("scroll",function(){
     }
     if(diferencia1>1 && widthWindow>750){
         flecha.style.right="20px";
-      console.log("si entro")
     }
     if(diferencia1>1 && widthWindow<750){
         flecha.style.right="12px";
     }
-    weCard.forEach((card)=>{
-        weCard2.forEach((card2)=>{
-            let offsetTop= card.offsetTop-655
-            let offsetTop2= card2.offsetTop-655
-            if(offset>=offsetTop){
-                card.style.left="0%"
-            }
-            if(offset<offsetTop){
-             card.style.left="-100%"
-            }
-            if(offset>offsetTop2){
-                card2.style.left="0%"
-               }
-            if(offset<offsetTop2){
-                card2.style.left="100%"
-               }
-            if(offset>heightWindow){
-                i3.classList.add("i3")
-            }
-            if(offset>(heightWindow*2)){
-                i4.classList.add("i4")
-            }
-            if(offset>(heightWindow*3)){
-                i5.classList.add("i5")
-            }
-            if(offset>(heightWindow*4)){
-                i6.classList.add("i6")
-              
-            }
-         }
-        )
-        })
+    if(offset>heightWindow){
+        viamonte4.classList.add("viamonte4")
+    }
+    if(offset>(heightWindow*2)){
+        viamonte5.classList.add("viamonte5")
+    }
+    if(offset>(heightWindow*3)){
+        viamonte6.classList.add("viamonte6")
+    }
+    if(offset>(heightWindow*4)){
+        viamonte7.classList.add("viamonte7")
+      
+    }
+    if(offset>(heightWindow*5)){
+        viamonte8.classList.add("viamonte8")
+    }
+    if(offset>(heightWindow*6)){
+        viamonte9.classList.add("viamonte9")
+       
+    }
+    if(offset>(heightWindow*7)){
+        viamonte10.classList.add("viamonte10")
+       
+    }
+
 })
+
+
 // click protects 
 
 let clickProyects= document.querySelector("#clickProyects");
@@ -161,3 +162,6 @@ for(let i=0;i<signoMenos.length;i++){
       
     })
 }
+
+
+

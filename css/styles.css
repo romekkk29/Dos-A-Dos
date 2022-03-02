@@ -106,7 +106,7 @@ h1:hover{
  
 }
 #proyects44 h2{
-    margin: 10px auto;
+    margin: 12px auto;
 }
 #oscuridadMobile a{
     text-decoration: none;
@@ -309,7 +309,7 @@ h1:hover{
     background-attachment:fixed;
     background-position: center;
     position: relative;
-    background-image: url("../img/home/7.jpg");
+  
 }
 .home2{
     background-image: url("../img/home/3.jpg");
@@ -343,34 +343,34 @@ h1:hover{
     background-image: url("../img/nosotros/image91.svg");
 }
 .viamonte1{
-    background-image: url("../img/viamonte/2.svg");
+    background-image: url("../img/viamonte/1.svg");
 }
 .viamonte2{
-    background-image: url("../img/viamonte/3.svg");
+    background-image: url("../img/viamonte/2.svg");
 }
 .viamonte3{
-    background-image: url("../img/viamonte/4.svg");
+    background-image: url("../img/viamonte/3.svg");
 }
 .viamonte4{
-    background-image: url("../img/viamonte/v4.webp");
+    background-image: url("../img/viamonte/4.svg");
 }
 .viamonte5{
-    background-image: url("../img/viamonte/v5.webp");
+    background-image: url("../img/viamonte/5.svg");
 }
 .viamonte6{
-    background-image: url("../img/viamonte/v6.webp");
+    background-image: url("../img/viamonte/6.svg");
 }
 .viamonte7{
-    background-image: url("../img/viamonte/v7.webp");
+    background-image: url("../img/viamonte/7.svg");
 }
 .viamonte8{
-    background-image: url("../img/viamonte/v8.webp");
+    background-image: url("../img/viamonte/8.svg");
 }
 .viamonte9{
-    background-image: url("../img/viamonte/v9.webp");
+    background-image: url("../img/viamonte/9.svg");
 }
 .viamonte10{
-    background-image: url("../img/viamonte/v10.webp");
+    background-image: url("../img/viamonte/10.svg");
 }
 /* OSCURIDAD PARALAX */
 
@@ -823,6 +823,9 @@ footer h5{
     .imagen2{
         height: 110vh;
         margin-top: -10px;
+        background-attachment: scroll;
+    }
+    .imagen{
         background-attachment: scroll;
     }
     .nosotrosCards{
