@@ -64,7 +64,7 @@ window.addEventListener("scroll",function(){
     }
     if(diferencia1>1 && widthWindow>750){
         flecha.style.right="20px";
-      console.log("si entro")
+     
     }
     if(diferencia1>1 && widthWindow<750){
         flecha.style.right="12px";
@@ -160,4 +160,141 @@ for(let i=0;i<signoMenos.length;i++){
       
       
     })
+}
+
+
+let getGaleria=document.querySelectorAll(".galeria img")
+let carrusel= document.querySelector("#carrusel")
+let oscuroCarrusel= document.querySelector("#oscuroCarrusel")
+let oscuroCarruselCruz= document.querySelector("#oscuroCarrusel img")
+let flechaCarruselMover= document.querySelector("#flechaCarruselMover")
+flechaCarruselMover.addEventListener("click",function(){
+    if(currentIndex<6){
+        currentIndex=currentIndex+1
+        setPositionByIndex();
+    }
+   if(currentIndex==6){
+    currentIndex=0
+    setPositionByIndex();
+   }
+})
+getGaleria.forEach((element,index)=>{
+    element.addEventListener("click",function(){
+        
+        currentIndex=index
+        let widthWindow=window.innerWidth; 
+        if(widthWindow>750){
+            oscuroCarrusel.classList.remove("hidden")
+            let html=document.querySelector("html")
+            carrusel.classList.remove("hidden");
+            html.style.overflowY="hidden"
+            flechaCarruselMover.classList.remove("hidden")
+            setPositionByIndex();
+        }
+
+     
+    })
+})
+oscuroCarruselCruz.addEventListener("click",function(){
+    oscuroCarrusel.classList.add("hidden")
+    let html=document.querySelector("html")
+    html.style.overflowY="scroll"
+    carrusel.classList.add("hidden");
+    flechaCarruselMover.classList.add("hidden")
+})
+
+
+
+
+
+
+const slider = document.querySelector('.slider-container'),
+slides = Array.from(document.querySelectorAll('.slide'))
+// set up our state
+let isDragging = false,
+  startPos = 0,
+  currentTranslate = 0,
+  prevTranslate = 0,
+  animationID,
+  currentIndex = 0
+
+// add our event listeners
+slides.forEach((slide, index) => {
+  const slideImage = slide.querySelector('img')
+  // disable default image drag
+  slideImage.addEventListener('dragstart', (e) => e.preventDefault())
+  // touch events
+  slide.addEventListener('touchstart', touchStart(index))
+  slide.addEventListener('touchend', touchEnd)
+  slide.addEventListener('touchmove', touchMove)
+  // mouse events
+  slide.addEventListener('mousedown', touchStart(index))
+  slide.addEventListener('mouseup', touchEnd)
+  slide.addEventListener('mousemove', touchMove)
+  slide.addEventListener('mouseleave', touchEnd)
+})
+
+// make responsive to viewport changes
+window.addEventListener('resize', setPositionByIndex)
+
+// prevent menu popup on long press
+window.oncontextmenu = function (event) {
+  event.preventDefault()
+  event.stopPropagation()
+  return false
+}
+
+function getPositionX(event) {
+  return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
+}
+
+// use a HOF so we have index in a closure
+function touchStart(index) {
+  return function (event) {
+    currentIndex = index
+    startPos = getPositionX(event)
+    isDragging = true
+    animationID = requestAnimationFrame(animation)
+    slider.classList.add('grabbing')
+  }
+}
+
+function touchMove(event) {
+  if (isDragging) {
+    const currentPosition = getPositionX(event)
+    currentTranslate = prevTranslate + currentPosition - startPos
+  }
+}
+
+function touchEnd() {
+  cancelAnimationFrame(animationID)
+  isDragging = false
+  const movedBy = currentTranslate - prevTranslate
+
+  // if moved enough negative then snap to next slide if there is one
+  if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
+
+  // if moved enough positive then snap to previous slide if there is one
+  if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
+
+  setPositionByIndex()
+
+  slider.classList.remove('grabbing')
+ 
+
+}
+
+function animation() {
+  setSliderPosition()
+  if (isDragging) requestAnimationFrame(animation)
+}
+
+function setPositionByIndex() {
+  currentTranslate = currentIndex * -window.innerWidth
+  prevTranslate = currentTranslate
+  setSliderPosition()
+}
+
+function setSliderPosition() {
+  slider.style.transform = `translateX(${currentTranslate}px)`
 }

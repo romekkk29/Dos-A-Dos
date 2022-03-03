@@ -319,23 +319,23 @@ h1:hover{
 }
 .i1{
     height: 100vh;
-    background-image: url("../img/nosotros/image86.svg");
+    background-image: url("../img/nosotros/image86.jpg");
 }
 .i2{
     height: 100vh;
-    background-image: url("../img/nosotros/image87.svg");
+    background-image: url("../img/nosotros/image87.webp");
 }
 .i3{
     height: 100vh;
-    background-image: url("../img/nosotros/image88.svg");
+    background-image: url("../img/nosotros/image88.webp");
 }
 .i4{
     height: 100vh;
-    background-image: url("../img/nosotros/image89.svg");
+    background-image: url("../img/nosotros/image89.webp");
 }
 .i5{
     height: 100vh;
-    background-image: url("../img/nosotros/image90.svg");
+    background-image: url("../img/nosotros/image90.webp");
 }
 .i6{
       height: 100vh;
@@ -343,7 +343,7 @@ h1:hover{
     background-image: url("../img/nosotros/image91.svg");
 }
 .viamonte1{
-    background-image: url("../img/viamonte/1.svg");
+    background-image: url("../img/viamonte/1.webp");
 }
 .viamonte2{
     background-image: url("../img/viamonte/2.svg");
@@ -691,9 +691,88 @@ h1:hover{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+.galeria div{
+    width: 100%;
+    margin:0px;
+    overflow: hidden;
+    display: flex;
 
+}
+.galeria img {
+    height: auto;
+   cursor: pointer;
+   overflow: hidden;
+   flex-grow: 1;
+ 
+}
 
+.slider-container {
 
+    display: inline-flex;
+  
+    overflow: hidden;
+    scrollbar-width: none;
+    transform: translateX(0);
+    will-change: transform;
+    transition: transform 0.6s ease-out;
+    cursor: grab;
+    overflow-y: hidden;
+    background-color: black;
+    position: fixed;
+    z-index: 3123123123123321;
+    top:10vh;
+    left: 0px;
+  }
+  
+  .slide{
+
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+   
+  }
+  .slide img{
+      width: 75vw;
+      height: auto;
+      max-height: 82vh;
+ 
+  }
+  #oscuroCarrusel{
+      background-color: black;
+      z-index: 213312133;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+
+  }
+  #oscuroCarrusel .oscuroCarruselImg{
+      position: absolute;
+      top:15px;
+      right: 50px;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+  }
+  #flechaCarruselMover{
+    overflow: hidden;
+    position: fixed;
+    top: 40vh;
+    right: 40px ;
+    width:70px;
+    height: 70px;
+   z-index: 2131241234213412342134234234;
+  }
+  
+  #flechaCarruselMover img{
+    
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    
+  }
 
 /* FOOTER*/
 
@@ -704,6 +783,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     position: relative;
+    margin-top: -5px;
 
 }
 footer p{
@@ -833,6 +913,9 @@ footer h5{
     }
     .textNosotros p{
        margin: 20px 8%
+    }
+    .galeria div{
+        flex-direction: column;
     }
     
 
