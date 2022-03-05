@@ -1000,6 +1000,8 @@ h1:hover{
     padding: 5px;
     border-radius: 5px;
 }
+
+
 #mapaTrue{
     width: 789px;
     height: 1070px;
@@ -1179,6 +1181,14 @@ footer h5{
     #mapaInteractivo div > div{
         margin: 0px auto;
         margin-bottom: 200px;
+    }
+    #proyectsFather{
+        display: none;
+    }
+    #mapaInteractivo #mobileMapa {
+        transform: scale(0.7);
+        margin-left: -200px;
+        margin-top: -200px;
     }
 
 }
