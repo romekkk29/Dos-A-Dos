@@ -587,10 +587,7 @@ h1:hover{
     margin-bottom: 39px;
     padding: 10px;
 }
-.textNosotros img:hover{
-    transition: all 0.5s ease;
-  transform: skew(15deg) scale(1.1) ;
-}
+
 .textNosotros p{
     color: rgba(0, 0, 0, 0.6);
     font-size: 16px;
@@ -600,10 +597,7 @@ h1:hover{
     margin: 20px 25% ;
     text-align: center;
 }
-.textNosotros p:hover{
-    transition: all 0.5s ease;
-    transform: scale(1.05);
-}
+
 .weCard{
    
     display: flex;
@@ -631,9 +625,7 @@ h1:hover{
     font-size: 36px;
     text-align: center;
 }
-.socios h5:hover{
-    text-decoration: underline;
-}
+
 .weCard h3{
     margin-top: 15px;
     margin-bottom: 5px;
@@ -773,6 +765,262 @@ h1:hover{
     cursor: pointer;
     
   }
+
+  /* paquetes */
+ 
+  .paquete div div{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 60px;
+     width: 264px;
+     overflow-y: hidden;
+  }
+  .paquete div div div p{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: gray;
+    font-weight: lighter;
+  }
+  .paquete div div div h2{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .paquete div div div{
+    display: flex;
+     align-items: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+    overflow-y: hidden;
+  }
+  .paquete #paqueteFlex{
+      display: flex;
+      margin-bottom: 40px;
+     
+  }
+.paquete{
+    margin: 100px auto;
+}
+#sectionPaquete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#sectionPaquete h3{
+    margin-top: 100px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+
+
+
+/* mapa interactivo */
+
+#mapaInteractivo{
+    text-align: center;
+   width: 100%;
+}
+#mapaInteractivo p{
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 300 ;
+    font-size: 34px;
+    color: rgba(0, 0, 0, 0.90);
+}
+#mapaInteractivo h4{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    margin-bottom: 40px;
+    margin-top: 7px;
+}
+#mapaInteractivo h4:hover{
+    text-decoration: underline;
+}
+
+
+#mapaInteractivo div > div{
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    margin: 200px auto;
+ 
+}
+#mapaInteractivo .paquetito{
+    position: absolute;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    cursor: pointer;
+    margin: 0px;
+}
+#mapaInteractivo .conText{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: black;
+}
+#mapaInteractivo #diamante{
+    top:475px;
+    left:200px;
+    width: 280px;
+}
+#mapaInteractivo #mapaJuegoInfantil{
+    top:400px;
+    left:490px;
+}
+#mapaInteractivo #mapaJuegoInfantil2{
+    top:840px;
+    left:635px;
+}
+#mapaInteractivo #mapaJuegoInfantil3{
+    top:600px;
+    left:200px;
+}
+#mapaInteractivo #mapaJuegoInfantil4{
+    top:180px;
+    left:735px;
+    width: 280px;
+    text-align: left;
+}
+#mapaInteractivo #mapaBicisenda{
+    top:900px;
+    left:375px;
+}
+#mapaInteractivo #mapaBicisenda2{
+    top:130px;
+    left:590px;
+   
+}
+#mapaInteractivo #mapaBicisenda3{
+    top:500px;
+    left:790px;
+    width: 200px;
+   
+}
+#mapaInteractivo #mapaBeach{
+    top:615px;
+    left:275px;
+}
+#mapaInteractivo #mapaBeach2{
+    top:745px;
+    left:245px;
+}
+#mapaInteractivo #mapaFitnes{
+    top:985px;
+    left:385px;
+    width: 250px;
+}
+#mapaInteractivo #mapaAjedrez{
+    top:940px;
+    left:430px;
+    width: 250px;
+}
+#mapaInteractivo #mapaTenis{
+    top:890px;
+    left:520px;
+    width: 280px;
+}
+#mapaInteractivo #mapaSkatePark{
+    top:750px;
+    left:645px;
+    width: 280px;
+}
+#mapaInteractivo #mapaPolifuncional{
+    top:690px;
+    left:745px;
+    width: 260px;
+}
+#mapaInteractivo #mapaMiniGolf{
+    top:640px;
+    left:745px;
+    width: 250px;
+}
+#mapaInteractivo #mapaTree{
+    top:520px;
+    left:80px;
+    width: 200px;
+    z-index: 3;
+   
+}
+#mapaInteractivo #mapaBosqueSur{
+    top:810px;
+    left:80px;
+    width: 280px;
+}
+#mapaInteractivo #mapaParqueMayor{
+    top:810px;
+    left:700px;
+    width: 210px;
+   
+}
+#mapaInteractivo #mapaParqueNorte{
+    top:120px;
+    left:730px;
+    width: 280px;
+    text-align: left;
+    
+   
+}
+#mapaInteractivo #mapaTree div{
+    width: 65px;
+    height: 55px;
+}
+
+#mapaInteractivo .paquetito div{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapaInteractivo .paquetito img{
+    transform: scale(0.83);
+}
+#mapaInteractivo .paquetito:hover{
+    transition: all 0.5 ease-in-out;
+    transform: translateY(-5px);
+    
+    
+}
+#mapaInteractivo .conText:hover{
+    background-color: #0085FF;
+    transition: all 0.5 ease-in-out;
+}
+#mapaInteractivo #parrafoText{
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#mapaTrue{
+    width: 789px;
+    height: 1070px;
+
+}
+#mapaFalse{
+    width: 789px;
+    height: 1070px;
+   
+}
+
+
+/* galeriaViamont*/
+
+.viamonteGaleria{
+  transform: scaleY(1.05);
+}
+.viamonteGaleria2{
+    transform: scaleX(1.006);
+  }
+
 
 /* FOOTER*/
 
@@ -917,7 +1165,21 @@ footer h5{
     .galeria div{
         flex-direction: column;
     }
-    
+    .paquete #paqueteFlex{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .paquete div div{
+        margin-bottom: 10px;
+    }
+    #mapaInteractivo > div{
+        width: 100%;
+        overflow: scroll;
+    }
+    #mapaInteractivo div > div{
+        margin: 0px auto;
+        margin-bottom: 200px;
+    }
 
 }
 
