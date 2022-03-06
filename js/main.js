@@ -192,31 +192,196 @@ let signoMas=document.querySelectorAll(".signoMas")
 let signoMenos=document.querySelectorAll(".signoMenos")
 let tituloMas=document.querySelectorAll(".tituloMas")
 
-for(let i=0; i<signoMas.length;i++){
-    signoMas[i].addEventListener("click", function(){
-        tituloMas[i].style.transform="scaleX(1) translate(-300px)";
-        textoH4[i].style.transform="translateY(0px)";
-        textoP[i].style.transform="translateY(0px)";
-        signoMas[i].classList.add("hidden");
-        signoMenos[i].classList.remove("hidden")
-        tituloMas[i].style.backdropFilter="none"
+
+
+
+signoMas[0].addEventListener("click", function(){
+    let windowInnerWidth= window.innerWidth;
+    if(windowInnerWidth>750){
+        tituloMas[0].style.transform="scaleX(1) translate(-300px)";
+        textoH4[0].style.transform="translateY(70px)";
+        textoP[0].style.transform="translateY(70px)";
+        signoMas[0].classList.add("hidden");
+        signoMenos[0].classList.remove("hidden")
+        tituloMas[0].style.backdropFilter="none"
+    }
+    else{
+        tituloMas[0].style.transform="scaleX(1) translate(-300px)";
+        textoH4[0].style.transform="translateY(25px)";
+        textoP[0].style.transform="translateY(25px)";
+        signoMas[0].classList.add("hidden");
+        signoMenos[0].classList.remove("hidden")
+        tituloMas[0].style.backdropFilter="none"
+    }
+})
+
+
+signoMenos[0].addEventListener("click", function(){
+    textoH4[0].style.transform="translateY(250px)";
+    textoP[0].style.transform="translateY(200px)";
+    tituloMas[0].style.zIndex="-1";
+    tituloMas[0].style.transform="scaleX(1) translate(0px)";
+    signoMas[0].classList.remove("hidden");
+    signoMenos[0].classList.add("hidden");
+    setTimeout(()=>{
+        tituloMas[0].style.backdropFilter="blur(10px)"
+    },300)
+  
+  
+})
+
+
+    signoMas[1].addEventListener("click", function(){
+        tituloMas[1].style.transform="scaleX(1) translate(-300px)";
+        textoH4[1].style.transform="translateY(0px)";
+        textoP[1].style.transform="translateY(0px)";
+        signoMas[1].classList.add("hidden");
+        signoMenos[1].classList.remove("hidden")
+        tituloMas[1].style.backdropFilter="none"
     })
-}
-for(let i=0;i<signoMenos.length;i++){
-    signoMenos[i].addEventListener("click", function(){
-        textoH4[i].style.transform="translateY(250px)";
-        textoP[i].style.transform="translateY(200px)";
-        tituloMas[i].style.zIndex="-1";
-        tituloMas[i].style.transform="scaleX(1) translate(0px)";
-        signoMas[i].classList.remove("hidden");
-        signoMenos[i].classList.add("hidden");
+
+
+    signoMenos[1].addEventListener("click", function(){
+        textoH4[1].style.transform="translateY(250px)";
+        textoP[1].style.transform="translateY(200px)";
+        tituloMas[1].style.zIndex="-1";
+        tituloMas[1].style.transform="scaleX(1) translate(0px)";
+        signoMas[1].classList.remove("hidden");
+        signoMenos[1].classList.add("hidden");
         setTimeout(()=>{
-            tituloMas[i].style.backdropFilter="blur(10px)"
+            tituloMas[1].style.backdropFilter="blur(10px)"
         },300)
       
       
     })
-}
+    signoMas[2].addEventListener("click", function(){
+        let windowInnerWidth= window.innerWidth;
+        if(windowInnerWidth>750){
+        tituloMas[2].style.transform="scaleX(1) translate(-300px)";
+        textoH4[2].style.transform="translateY(90px)";
+        textoP[2].style.transform="translateY(90px)";
+        signoMas[2].classList.add("hidden");
+        signoMenos[2].classList.remove("hidden")
+        tituloMas[2].style.backdropFilter="none"}
+        else{
+            tituloMas[2].style.transform="scaleX(1) translate(-300px)";
+        textoH4[2].style.transform="translateY(40px)";
+        textoP[2].style.transform="translateY(40px)";
+        signoMas[2].classList.add("hidden");
+        signoMenos[2].classList.remove("hidden")
+        tituloMas[2].style.backdropFilter="none"
+        }
+    })
+    
+    
+    signoMenos[2].addEventListener("click", function(){
+        textoH4[2].style.transform="translateY(250px)";
+        textoP[2].style.transform="translateY(200px)";
+        tituloMas[2].style.zIndex="-1";
+        tituloMas[2].style.transform="scaleX(1) translate(0px)";
+        signoMas[2].classList.remove("hidden");
+        signoMenos[2].classList.add("hidden");
+        setTimeout(()=>{
+            tituloMas[2].style.backdropFilter="blur(10px)"
+        },300)
+      
+      
+    })
+    
 
+    signoMas[3].addEventListener("click", function(){
+        tituloMas[3].style.transform="scaleX(1) translate(-300px)";
+        textoH4[3].style.transform="translateY(90px)";
+        textoP[3].style.transform="translateY(90px)";
+        signoMas[3].classList.add("hidden");
+        signoMenos[3].classList.remove("hidden")
+        tituloMas[3].style.backdropFilter="none"
+    })
+    
+    
+    signoMenos[3].addEventListener("click", function(){
+        textoH4[3].style.transform="translateY(250px)";
+        textoP[3].style.transform="translateY(200px)";
+        tituloMas[3].style.zIndex="-1";
+        tituloMas[3].style.transform="scaleX(1) translate(0px)";
+        signoMas[3].classList.remove("hidden");
+        signoMenos[3].classList.add("hidden");
+        setTimeout(()=>{
+            tituloMas[3].style.backdropFilter="blur(10px)"
+        },300)
+      
+      
+    })
+    
 
+    signoMas[4].addEventListener("click", function(){
+        let windowInnerWidth= window.innerWidth;
+        if(windowInnerWidth>750){
+        tituloMas[4].style.transform="scaleX(1) translate(-300px)";
+        textoH4[4].style.transform="translateY(120px)";
+        textoP[4].style.transform="translateY(120px)";
+        signoMas[4].classList.add("hidden");
+        signoMenos[4].classList.remove("hidden")
+        tituloMas[4].style.backdropFilter="none"
+        }
+        else{
+            tituloMas[4].style.transform="scaleX(1) translate(-300px)";
+        textoH4[4].style.transform="translateY(85px)";
+        textoP[4].style.transform="translateY(85px)";
+        signoMas[4].classList.add("hidden");
+        signoMenos[4].classList.remove("hidden")
+        tituloMas[4].style.backdropFilter="none"
+        }
+    })
+    
+    
+    signoMenos[4].addEventListener("click", function(){
+        textoH4[4].style.transform="translateY(250px)";
+        textoP[4].style.transform="translateY(200px)";
+        tituloMas[4].style.zIndex="-1";
+        tituloMas[4].style.transform="scaleX(1) translate(0px)";
+        signoMas[4].classList.remove("hidden");
+        signoMenos[4].classList.add("hidden");
+        setTimeout(()=>{
+            tituloMas[4].style.backdropFilter="blur(10px)"
+        },300)
+      
+      
+    })
+    
+    signoMas[5].addEventListener("click", function(){
+        let windowInnerWidth= window.innerWidth;
+        if(windowInnerWidth>750){
+        tituloMas[5].style.transform="scaleX(1) translate(-300px)";
+        textoH4[5].style.transform="translateY(75px)";
+        textoP[5].style.transform="translateY(75px)";
+        signoMas[5].classList.add("hidden");
+        signoMenos[5].classList.remove("hidden")
+        tituloMas[5].style.backdropFilter="none"
 
+        }
+        else{
+            tituloMas[5].style.transform="scaleX(1) translate(-300px)";
+            textoH4[5].style.transform="translateY(50px)";
+            textoP[5].style.transform="translateY(50px)";
+            signoMas[5].classList.add("hidden");
+            signoMenos[5].classList.remove("hidden")
+            tituloMas[5].style.backdropFilter="none"
+
+        }
+    })
+    
+    
+    signoMenos[5].addEventListener("click", function(){
+        textoH4[5].style.transform="translateY(250px)";
+        textoP[5].style.transform="translateY(200px)";
+        tituloMas[5].style.zIndex="-1";
+        tituloMas[5].style.transform="scaleX(1) translate(0px)";
+        signoMas[5].classList.remove("hidden");
+        signoMenos[5].classList.add("hidden");
+        setTimeout(()=>{
+            tituloMas[5].style.backdropFilter="blur(10px)"
+        },300)
+      
+      
+    })
