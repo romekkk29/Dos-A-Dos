@@ -727,10 +727,15 @@ h1:hover{
   }
   .slide img{
       width: 75vw;
-      height: auto;
+      height: 80vh;
       max-height: 82vh;
- 
+    max-width: 80vw;
+        object-fit: cover;
+        object-position: bottom;
   }
+ #cambioImagen{
+    object-fit: contain;
+ }
   #oscuroCarrusel{
       background-color: black;
       z-index: 213312133;
@@ -757,7 +762,15 @@ h1:hover{
     height: 70px;
    z-index: 2131241234213412342134234234;
   }
-  
+  #flechaCarruselMover2{
+    overflow: hidden;
+    position: fixed;
+    top: 40vh;
+    left: 40px ;
+    width:70px;
+    height: 70px;
+   z-index: 2131241234213412342134234234;
+  }
   #flechaCarruselMover img{
     
     width: 70px;
@@ -765,6 +778,14 @@ h1:hover{
     cursor: pointer;
     
   }
+  #flechaCarruselMover2 img{
+    
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
+
 
   /* paquetes */
  
@@ -961,6 +982,14 @@ h1:hover{
 #mapaInteractivo #mapaParqueNorte{
     top:120px;
     left:730px;
+    width: 280px;
+    text-align: left;
+    
+   
+}
+#mapaInteractivo #mapaIsla{
+    top:350px;
+    left:415px;
     width: 280px;
     text-align: left;
     
@@ -1190,6 +1219,24 @@ footer h5{
         margin-left: -200px;
         margin-top: -200px;
     }
-
+    .slider-container{
+        top:20vh
+    }
+    #flechaCarruselMover {
+            top:80vh;
+            right: 25%;
+            transform: scale(0.8);
+    }
+    #flechaCarruselMover2 {
+        top:80vh;
+        left: 27%;
+        transform: scale(0.8);
+}
+    .slide img{
+        width: 90vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+    
 }
 

@@ -173,6 +173,324 @@ let mapaBicisenda=document.querySelector("#mapaBicisenda")
 let mapaBicisenda2=document.querySelector("#mapaBicisenda2")
 let mapaBicisenda3=document.querySelector("#mapaBicisenda3")
 let diamante=document.querySelector("#diamante")
+
+
+let getGaleria=document.querySelectorAll(".galeria img")
+let carrusel= document.querySelector("#carrusel")
+let oscuroCarrusel= document.querySelector("#oscuroCarrusel")
+let oscuroCarruselCruz= document.querySelector("#oscuroCarrusel img")
+let flechaCarruselMover= document.querySelector("#flechaCarruselMover")
+let flechaCarruselMover2= document.querySelector("#flechaCarruselMover2")
+flechaCarruselMover.addEventListener("click",function(){
+    let cantidadSlide=document.querySelectorAll(".slide")
+    if(currentIndex<cantidadSlide.length){
+        currentIndex=currentIndex+1
+        aplicar()
+    }
+   if(currentIndex==cantidadSlide.length){
+    currentIndex=0
+    aplicar()
+   }
+})
+flechaCarruselMover2.addEventListener("click",function(){
+    let cantidadSlide=document.querySelectorAll(".slide")
+   if(currentIndex==0){
+    currentIndex=cantidadSlide.length-1
+    aplicar()
+   }
+   else{
+    currentIndex=currentIndex-1
+    aplicar()
+   }
+})
+getGaleria.forEach((element,index)=>{
+    element.addEventListener("click",function(){
+        
+            carrusel.innerHTML="<div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/ciclovia.svg alt=bicisenda></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/bike.svg alt=juegosdeniños></div> <div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/tenis.svg alt=tenisemesa></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/tenis2.svg alt=tenisdemesa></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/bike2.svg alt=juegosdeniños></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/ciclovia2.svg alt=bicisenda></div>"
+            
+            currentIndex=index
+            aplicar();
+            oscuroCarrusel.classList.remove("hidden")
+            let html=document.querySelector("html")
+            carrusel.classList.remove("hidden");
+            html.style.overflowY="hidden"
+            flechaCarruselMover.classList.remove("hidden")
+            flechaCarruselMover2.classList.remove("hidden")
+            
+        }
+
+     
+    )
+})
+oscuroCarruselCruz.addEventListener("click",function(){
+    oscuroCarrusel.classList.add("hidden")
+    let html=document.querySelector("html")
+    html.style.overflowY="scroll"
+    carrusel.classList.add("hidden");
+    flechaCarruselMover.classList.add("hidden")
+    flechaCarruselMover2.classList.add("hidden")
+
+})
+
+//mapa viamonte
+let mapaBeach= document.querySelector("#mapaBeach")
+let mapaBeach2= document.querySelector("#mapaBeach2")
+let mapaIsla= document.querySelector("#mapaIsla")
+let mapaJuegoInfantilNorte= document.querySelector("#mapaJuegoInfantil")
+let mapaParqueLago= document.querySelector("#mapaTree")
+let mapaJuegoInfantilOest= document.querySelector("#mapaJuegoInfantil3")
+let mapaParqueSur= document.querySelector("#mapaBosqueSur")
+let mapaFitnes= document.querySelector("#mapaFitnes")
+let mapaAjedrez= document.querySelector("#mapaAjedrez")
+let mapaTenis= document.querySelector("#mapaTenis")
+let mapaJuegoSur= document.querySelector("#mapaJuegoInfantil2")
+let mapaParqueMayor= document.querySelector("#mapaParqueMayor")
+let mapaSkatePark= document.querySelector("#mapaSkatePark")
+let mapaPolifuncional= document.querySelector("#mapaPolifuncional")
+let mapaMinigolf= document.querySelector("#mapaMiniGolf")
+let mapaJuegoInfantilNorEste= document.querySelector("#mapaJuegoInfantil4")
+let mapaParqueNorte= document.querySelector("#mapaParqueNorte")
+mapaParqueNorte.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/parquenorte_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/parquenorte_2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/parquenorte_3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+})
+mapaJuegoInfantilNorEste.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/juegoInfantilNorEste1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantilNorEste2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantilNorEste3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+})
+mapaMinigolf.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/minigolf_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/minigolf_2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/minigolf_3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+})
+mapaPolifuncional.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/cancha_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/cancha_2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/cancha_3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+})
+mapaSkatePark.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/skatepark_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/skatepark_2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/skatepark_3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+})
+mapaParqueMayor.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/parque-mayor.jpg alt=laguna></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+mapaJuegoSur.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/juegoInfantilSur.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantilSur2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantilSur3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+    
+})
+mapaTenis.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/tennis_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/tennis_2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/tennis_3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+    
+})
+mapaAjedrez.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/ajedrez_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/ajedrez_2.jpg alt=parqueLago></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/ajedrez_3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+    
+})
+mapaFitnes.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/fitness_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/fitness_2.jpg alt=parqueLago></div><div class=slide><img  loading=lazy src=img/viamonte/fitness_3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+    
+})
+mapaParqueSur.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/parquesur_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/parquesur_2.jpg alt=parqueLago></div><div class=slide><img  loading=lazy src=img/viamonte/parquesur_3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+    
+})
+mapaJuegoInfantilOest.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/juegoInfantilOest1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantilOest2.jpg alt=parqueLago></div><div class=slide><img  loading=lazy src=img/viamonte/juegoInfantilOest3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+    
+})
+mapaParqueLago.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/parquelago_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/parquelago_2.jpg alt=parqueLago></div><div class=slide><img  loading=lazy src=img/viamonte/parquelago_3.jpg alt=parqueLago></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+    
+})
+mapaJuegoInfantilNorte.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/juegoInfantileNorte.jpg alt=juegoInfantil></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantileNorte2.jpg alt=juegoInfantil></div><div class=slide><img  loading=lazy src=img/viamonte/juegoInfantileNorte3.jpg alt=juegoInfantil></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+    
+})
+mapaIsla.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/parqueIsla1.jpg alt=parqueisla></div><div class=slide><img  loading=lazy src=img/viamonte/parqueIsla2.jpg alt=parqueisla></div><div class=slide><img  loading=lazy src=img/viamonte/parqueIsla3.jpg alt=parqueisla></div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    flechaCarruselMover.classList.remove("hidden")
+    flechaCarruselMover2.classList.remove("hidden")
+    
+})
+mapaBeach.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/10.svg alt=laguna></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+mapaBeach2.addEventListener("click",function(){
+   
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/laguna2.jpg alt=laguna2></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
 mapaBicisenda.addEventListener("click",function(){
     mapaTrue.classList.add("hidden")
     mapaFalse.classList.remove("hidden")
@@ -188,142 +506,117 @@ mapaBicisenda3.addEventListener("click",function(){
 diamante.addEventListener("click",function(){
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
-})
-
-
-
-let getGaleria=document.querySelectorAll(".galeria img")
-let carrusel= document.querySelector("#carrusel")
-let oscuroCarrusel= document.querySelector("#oscuroCarrusel")
-let oscuroCarruselCruz= document.querySelector("#oscuroCarrusel img")
-let flechaCarruselMover= document.querySelector("#flechaCarruselMover")
-flechaCarruselMover.addEventListener("click",function(){
-    if(currentIndex<6){
-        currentIndex=currentIndex+1
-        setPositionByIndex();
-    }
-   if(currentIndex==6){
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/barrioPremium.jpg alt=barrio></div>"
     currentIndex=0
-    setPositionByIndex();
-   }
-})
-getGaleria.forEach((element,index)=>{
-    element.addEventListener("click",function(){
-        
-        currentIndex=index
-        let widthWindow=window.innerWidth; 
-        if(widthWindow>750){
-            oscuroCarrusel.classList.remove("hidden")
-            let html=document.querySelector("html")
-            carrusel.classList.remove("hidden");
-            html.style.overflowY="hidden"
-            flechaCarruselMover.classList.remove("hidden")
-            setPositionByIndex();
-        }
-
-     
-    })
-})
-oscuroCarruselCruz.addEventListener("click",function(){
-    oscuroCarrusel.classList.add("hidden")
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
     let html=document.querySelector("html")
-    html.style.overflowY="scroll"
-    carrusel.classList.add("hidden");
-    flechaCarruselMover.classList.add("hidden")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
 })
 
 
-
-
-
-
-const slider = document.querySelector('.slider-container'),
-slides = Array.from(document.querySelectorAll('.slide'))
-// set up our state
-let isDragging = false,
+  // set up our state
+  let isDragging = false,
   startPos = 0,
   currentTranslate = 0,
   prevTranslate = 0,
   animationID,
   currentIndex = 0
 
-// add our event listeners
-slides.forEach((slide, index) => {
-  const slideImage = slide.querySelector('img')
-  // disable default image drag
-  slideImage.addEventListener('dragstart', (e) => e.preventDefault())
-  // touch events
-  slide.addEventListener('touchstart', touchStart(index))
-  slide.addEventListener('touchend', touchEnd)
-  slide.addEventListener('touchmove', touchMove)
-  // mouse events
-  slide.addEventListener('mousedown', touchStart(index))
-  slide.addEventListener('mouseup', touchEnd)
-  slide.addEventListener('mousemove', touchMove)
-  slide.addEventListener('mouseleave', touchEnd)
-})
 
-// make responsive to viewport changes
-window.addEventListener('resize', setPositionByIndex)
 
-// prevent menu popup on long press
-window.oncontextmenu = function (event) {
-  event.preventDefault()
-  event.stopPropagation()
-  return false
+function aplicar(){
+    const slider = document.querySelector('.slider-container'),
+    slides = Array.from(document.querySelectorAll('.slide'))
+    
+    setPositionByIndex();
+    
+    
+    // add our event listeners
+    slides.forEach((slide, index) => {
+      const slideImage = slide.querySelector('img')
+      // disable default image drag
+      slideImage.addEventListener('dragstart', (e) => e.preventDefault())
+      // touch events
+      slide.addEventListener('touchstart', touchStart(index))
+      slide.addEventListener('touchend', touchEnd)
+      slide.addEventListener('touchmove', touchMove)
+      // mouse events
+      slide.addEventListener('mousedown', touchStart(index))
+      slide.addEventListener('mouseup', touchEnd)
+      slide.addEventListener('mousemove', touchMove)
+      slide.addEventListener('mouseleave', touchEnd)
+    })
+    
+    // make responsive to viewport changes
+    window.addEventListener('resize', setPositionByIndex)
+    
+    // prevent menu popup on long press
+    window.oncontextmenu = function (event) {
+      event.preventDefault()
+      event.stopPropagation()
+      return false
+    }
+    
+    function getPositionX(event) {
+      return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
+    }
+    
+    // use a HOF so we have index in a closure
+    function touchStart(index) {
+      return function (event) {
+        currentIndex = index
+        startPos = getPositionX(event)
+        isDragging = true
+        animationID = requestAnimationFrame(animation)
+        slider.classList.add('grabbing')
+      }
+    }
+    
+    function touchMove(event) {
+      if (isDragging) {
+        const currentPosition = getPositionX(event)
+        currentTranslate = prevTranslate + currentPosition - startPos
+      }
+    }
+    
+    function touchEnd() {
+      cancelAnimationFrame(animationID)
+      isDragging = false
+      const movedBy = currentTranslate - prevTranslate
+    
+      // if moved enough negative then snap to next slide if there is one
+      if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
+    
+      // if moved enough positive then snap to previous slide if there is one
+      if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
+    
+      setPositionByIndex()
+    
+      slider.classList.remove('grabbing')
+     
+    
+    }
+    
+    function animation() {
+      setSliderPosition()
+      if (isDragging) requestAnimationFrame(animation)
+    }
+    
+    function setPositionByIndex() {
+      currentTranslate = currentIndex * -window.innerWidth
+      prevTranslate = currentTranslate
+      setSliderPosition()
+    }
+    
+    function setSliderPosition() {
+      slider.style.transform = `translateX(${currentTranslate}px)`
+    }
 }
 
-function getPositionX(event) {
-  return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
-}
 
-// use a HOF so we have index in a closure
-function touchStart(index) {
-  return function (event) {
-    currentIndex = index
-    startPos = getPositionX(event)
-    isDragging = true
-    animationID = requestAnimationFrame(animation)
-    slider.classList.add('grabbing')
-  }
-}
 
-function touchMove(event) {
-  if (isDragging) {
-    const currentPosition = getPositionX(event)
-    currentTranslate = prevTranslate + currentPosition - startPos
-  }
-}
 
-function touchEnd() {
-  cancelAnimationFrame(animationID)
-  isDragging = false
-  const movedBy = currentTranslate - prevTranslate
-
-  // if moved enough negative then snap to next slide if there is one
-  if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
-
-  // if moved enough positive then snap to previous slide if there is one
-  if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
-
-  setPositionByIndex()
-
-  slider.classList.remove('grabbing')
- 
-
-}
-
-function animation() {
-  setSliderPosition()
-  if (isDragging) requestAnimationFrame(animation)
-}
-
-function setPositionByIndex() {
-  currentTranslate = currentIndex * -window.innerWidth
-  prevTranslate = currentTranslate
-  setSliderPosition()
-}
-
-function setSliderPosition() {
-  slider.style.transform = `translateX(${currentTranslate}px)`
-}

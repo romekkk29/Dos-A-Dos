@@ -168,6 +168,7 @@ let carrusel= document.querySelector("#carrusel")
 let oscuroCarrusel= document.querySelector("#oscuroCarrusel")
 let oscuroCarruselCruz= document.querySelector("#oscuroCarrusel img")
 let flechaCarruselMover= document.querySelector("#flechaCarruselMover")
+let flechaCarruselMover2= document.querySelector("#flechaCarruselMover2")
 flechaCarruselMover.addEventListener("click",function(){
     if(currentIndex<6){
         currentIndex=currentIndex+1
@@ -175,6 +176,17 @@ flechaCarruselMover.addEventListener("click",function(){
     }
    if(currentIndex==6){
     currentIndex=0
+    setPositionByIndex();
+   }
+})
+flechaCarruselMover2.addEventListener("click",function(){
+  
+   if(currentIndex==0){
+    currentIndex=5
+    setPositionByIndex();
+   }
+   else{
+    currentIndex=currentIndex-1
     setPositionByIndex();
    }
 })
@@ -189,6 +201,7 @@ getGaleria.forEach((element,index)=>{
             carrusel.classList.remove("hidden");
             html.style.overflowY="hidden"
             flechaCarruselMover.classList.remove("hidden")
+            flechaCarruselMover2.classList.remove("hidden")
             setPositionByIndex();
         }
 
@@ -201,6 +214,8 @@ oscuroCarruselCruz.addEventListener("click",function(){
     html.style.overflowY="scroll"
     carrusel.classList.add("hidden");
     flechaCarruselMover.classList.add("hidden")
+    flechaCarruselMover2.classList.add("hidden")
+
 })
 
 
