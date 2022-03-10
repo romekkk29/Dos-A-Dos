@@ -298,7 +298,7 @@ h1:hover{
     background-position: center;
     background-attachment:fixed;
     position: relative;
-    background-image: url("../img/home/2.jpg");
+   
 }
 .imagen2{
     width: 100vw;
@@ -310,6 +310,9 @@ h1:hover{
     background-position: center;
     position: relative;
   
+}
+.home1{
+    background-image: url("../img/viamonte/2.webp");
 }
 .home2{
     background-image: url("../img/home/miralago2.jpg");
@@ -381,7 +384,114 @@ h1:hover{
 .viamonte10{
     background-image: url("../img/viamonte/10.svg");
 }
+#miralago1{
+    background-image: url("../img/miralagoPotrerillos/iralago_1-2.jpg");
+}
+#miralago2{
+    background-image: url("../img/miralagoPotrerillos/Miralago_2.jpg");
+}
+#miralago3{
+    background-image: url("../img/miralagoPotrerillos/miralago_3.jpg");
+}
+#miralago4{
+    background-image: url("../img/miralagoPotrerillos/iralago_4.jpg");
+}
+#miralago5{
+    background-image: url("../img/miralagoPotrerillos/Miralago_5-.jpg");
+}
+#miralago6{
+    background-image: url("../img/miralagoPotrerillos/Miralago_6-1.jpg");
+}
+#logoBackground{
+    position: absolute;
+    top: 63vh;
+    right: 18vw;
 
+}
+#vistalba1{
+    background-image: url("../img/vistalba/vistalba1.jpg");
+}
+
+#vistalba2{
+    background-image: url("../img/vistalba/vistalba2.jpg");
+}
+#vistalba3{
+    background-image: url("../img/vistalba/vistalba3.jpg");
+}
+#vistalba4{
+    background-image: url("../img/vistalba/vistalba4.jpg");
+}
+#vistalba5{
+    background-image: url("../img/vistalba/vistalba5.jpg");
+}
+
+#vistalba6{
+    background-image: url("../img/vistalba/vistalba6.jpg");
+}
+#tunduque1{
+    background-image: url("../img/tunduque/tunduques1.jpg");
+    background-position: top;
+}
+#tunduque2{
+    background-image: url("../img/tunduque/tunduques2.jpg");
+}
+
+#tunduque3{
+    background-image: url("../img/tunduque/tunduques3.jpg");
+}
+
+#tunduque4{
+    background-image: url("../img/tunduque/tunduques4.jpg");
+}
+
+#tunduque5{
+    background-image: url("../img/tunduque/tunduques5.jpg");
+}
+#almendro1{
+    background-image: url("../img/almendros/almendro1.jpg");
+}
+#almendro2{
+    background-image: url("../img/almendros/almendro2.jpg");
+}
+#almendro3{
+    background-image: url("../img/almendros/almendro3.jpg");
+}
+#almendro4{
+    background-image: url("../img/almendros/almendro4.jpg");
+}
+#almendro5{
+    background-image: url("../img/almendros/almendro5.jpg");
+}
+#almendro6{
+    background-image: url("../img/almendros/almendro6.jpg");
+}
+#fortiatte1{
+    background-image: url("../img/fortiatte/fortiatte1.jpg");
+}
+#fortiatte2{
+    background-image: url("../img/fortiatte/Fortiatte_2.jpg");
+
+}
+
+#fortiatte3{
+    background-image: url("../img/fortiatte/Fortiatte_3.jpg");
+
+}
+
+#fortiatte4{
+    background-image: url("../img/fortiatte/Fortiatte_4.jpg");
+
+}
+
+#fortiatte5{
+    background-image: url("../img/fortiatte/Fortiatte_5.jpg");
+
+}
+
+#fortiatte6{
+    background-image: url("../img/fortiatte/Fortiatte_6.jpg");
+
+}
 
 
 /* FLECHA UP */
@@ -701,7 +811,7 @@ h1:hover{
     transition: transform 0.6s ease-out;
     cursor: grab;
     overflow-y: hidden;
-    background-color: black;
+
     position: fixed;
     z-index: 3123123123123321;
     top:10vh;
@@ -718,7 +828,7 @@ h1:hover{
    
   }
   .slide img{
-      width: 75vw;
+      width: 77vw;
       height: 80vh;
       max-height: 82vh;
     max-width: 80vw;
@@ -729,7 +839,8 @@ h1:hover{
     object-fit: contain;
  }
   #oscuroCarrusel{
-      background-color: black;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
       z-index: 213312133;
       width: 100vw;
       height: 100vh;
@@ -1298,7 +1409,7 @@ footer h5{
         margin-top: 100px;
     }
     #paginaContacto section .contactoTitle{
-        font-size: 40px;
+        font-size: 38px;
     }
 }
 
