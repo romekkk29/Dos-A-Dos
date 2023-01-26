@@ -355,7 +355,7 @@ h1:hover{
     background-image: url("../img/nosotros/image91.webp");
 }
 .viamonte1{
-    background-image: url("../img/viamonte/1.webp");
+    background-image: url("../img/viamonte/1.jpg");
 }
 .viamonte2{
     background-image: url("../img/viamonte/2.webp");
@@ -385,22 +385,34 @@ h1:hover{
     background-image: url("../img/viamonte/10.svg");
 }
 #miralago1{
-    background-image: url("../img/miralagoPotrerillos/iralago_1-2.jpg");
+    background-image: url("../img/miralagoPotrerillos/MIRALAGO1.jpg");
 }
 #miralago2{
-    background-image: url("../img/miralagoPotrerillos/Miralago_2.jpg");
+    background-image: url("../img/home/miralago2.jpg");
 }
 #miralago3{
-    background-image: url("../img/miralagoPotrerillos/miralago_3.jpg");
+    background-image: url("../img/miralagoPotrerillos/MIRALAGO3.jpg");
 }
 #miralago4{
-    background-image: url("../img/miralagoPotrerillos/iralago_4.jpg");
+    background-image: url("../img/miralagoPotrerillos/iralago_1-2.jpg");
 }
 #miralago5{
-    background-image: url("../img/miralagoPotrerillos/Miralago_5-.jpg");
+    background-image: url("../img/miralagoPotrerillos/MIRALAGO5.jpg");
 }
 #miralago6{
-    background-image: url("../img/miralagoPotrerillos/Miralago_6-1.jpg");
+    background-image: url("../img/miralagoPotrerillos/MIRALAGO6.jpg");
+}
+#miralago7{
+    background-image: url("../img/miralagoPotrerillos/MIRALAGO7.jpg");
+}
+#miralago8{
+    background-image: url("../img/miralagoPotrerillos/MIRALAGO8.jpg");
+}
+#miralago9{
+    background-image: url("../img/miralagoPotrerillos/MIRALAGO9.jpg");
+}
+#miralago10{
+    background-image: url("../img/miralagoPotrerillos/MIRALAGO10.jpg");
 }
 #logoBackground{
     position: absolute;
@@ -416,17 +428,26 @@ h1:hover{
     background-image: url("../img/vistalba/vistalba2.jpg");
 }
 #vistalba3{
-    background-image: url("../img/vistalba/vistalba3.jpg");
+    background-image: url("../img/vistalba/QvattroVistalba_3.jpg");
 }
 #vistalba4{
-    background-image: url("../img/vistalba/vistalba4.jpg");
+    background-image: url("../img/vistalba/QVATTROVISTALBA4.jpg");
 }
 #vistalba5{
-    background-image: url("../img/vistalba/vistalba5.jpg");
+    background-image: url("../img/vistalba/vistalba2.jpg");
 }
 
 #vistalba6{
     background-image: url("../img/vistalba/vistalba6.jpg");
+}
+#vistalba7{
+    background-image: url("../img/vistalba/vistalba3.jpg");
+}
+#vistalba8{
+    background-image: url("../img/vistalba/QVATTROVISTALBA8.jpg");
+}
+#vistalba9{
+    background-image: url("../img/vistalba/QVATTROVISTALBA6.jpg");
 }
 #tunduque1{
     background-image: url("../img/tunduque/tunduques1.jpg");
@@ -1039,6 +1060,163 @@ h1:hover{
     left:385px;
     width: 250px;
 }
+#mapaInteractivo #camera1{
+    top:330px;
+    left:855px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera1:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera2{
+    top:935px;
+    left:315px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera2:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera3{
+    top:665px;
+    left:190px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera3:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera4{
+    top:745px;
+    left:180px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera4:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera5{
+    top:695px;
+    left:275px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera5:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera6{
+    top:35px;
+    left:725px;
+    background-color: #1A11AB;
+  
+}
+#mapaInteractivo #camera6:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera11{
+    top:105px;
+    left:105px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera11:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera22{
+    top:395px;
+    left:200px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera22:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera33{
+    top:545px;
+    left:390px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera33:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera44{
+    top:835px;
+    left:115px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera44:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera55{
+    top:555px;
+    left:785px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera55:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera66{
+    top:175px;
+    left:860px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera66:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera77{
+    top:85px;
+    left:570px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera77:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera88{
+    top:280px;
+    left:550px;
+    background-color: #1A11AB;
+}
+#mapaInteractivo #camera88:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #estacionamiento11{
+    top:135px;
+    left:255px;
+}
+#mapaInteractivo #lodge11{
+    top:515px;
+    left:290px;
+}
+#mapaInteractivo #muelle11{
+    top:595px;
+    left:260px;
+}
+#mapaInteractivo #mirador11{
+    top:645px;
+    left:295px;
+}
+#mapaInteractivo #puente11{
+    top:685px;
+    left:345px;
+}
+#mapaInteractivo #juego11{
+    top:785px;
+    left:405px;
+}
+#mapaInteractivo #plato11{
+    top:835px;
+    left:375px;
+}
+#mapaInteractivo #voley11{
+    top:850px;
+    left:325px;
+}
+#mapaInteractivo #pileta11{
+    top:855px;
+    left:275px;
+}
+#mapaInteractivo #barco11{
+    top:795px;
+    left:225px;
+}
+#mapaInteractivo #paragua11{
+    top:725px;
+    left:165px;
+}
 #mapaInteractivo #mapaAjedrez{
     top:940px;
     left:430px;
@@ -1418,4 +1596,123 @@ footer h5{
     .divMas{
         bottom: 90px;
     }
+}
+
+.tituloMas{
+    backdrop-filter: none !important;
+    background: rgba(0,0,0,0.5) !important;
+}
+.verProyecto{
+    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.5) !important;
+}
+.pText{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9) !important;
+}
+.textoH4{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+}
+
+.fixedBlack{
+    background-color: rgba(0, 0, 0, 0.15);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 23;
+}
+.principalText{
+    z-index: 1231;
+}
+.divMas{
+    z-index: 1231;
+}
+#proyectsFather{
+    z-index: 1231;
+}
+footer{
+    z-index: 1231 !important;
+}
+
+.vistaFrontal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-sizing: border-box;
+    transition: all 0.9s ease;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    z-index: 1213123;
+    display: flex;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 213;
+    bottom: 35%;
+    height: 50px;
+
+}
+.vistaFrontal h4:hover {
+    opacity: 1;
+}
+.vistaFrontal h4 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 20px;
+    text-shadow: none;
+    color: #fff;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.logoViamontee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1213123;
+    position: absolute;
+    bottom: 200px;
+    right: 190px;
+    z-index: 213;
+    bottom: 35%;
+    
+}
+
+.miralagoo{
+    bottom: 100px;
+}
+@media all and (max-width:900px){
+   
+    .vistaFrontal{
+        display: none;
+    }
+    .logoViamontee{
+        transform: scale(0.5);
+        left: 22%;
+        right: 22%;
+        bottom: 15%;
+    }
+
+    .miralagoo{
+        transform: scale(0.5);
+        left: 22%;
+        right: 22%;
+        bottom: 5%;
+    }
+   
+}
+#paqueteFlex div img{
+    transform: scale(1.8);
+}
+.paquete div div{
+    margin-right: 60px;
+}
+#imagenIcono{
+    width: 66px !important;
+    height: 66px !important;
+}
+
+.rome .slide img{
+    width: auto;
 }

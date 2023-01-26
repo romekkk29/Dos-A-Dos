@@ -94,7 +94,7 @@ clickProyects.addEventListener("click",function(e){
     
 
 })
-clickProyects2.addEventListener("click",function(e){7
+clickProyects2.addEventListener("click",function(e){
     e.preventDefault();
     console.log("sube")
     //proyects.style.marginTop="-30%";
@@ -118,7 +118,7 @@ let tituloMas=document.querySelectorAll(".tituloMas")
 signoMas[0].addEventListener("click", function(){
     let windowInnerWidth= window.innerWidth;
     if(windowInnerWidth>750){
-        tituloMas[0].style.transform="scaleX(1) translate(-300px)";
+        tituloMas[0].style.transform="scaleX(1) translate(-1000px)";
         textoH4[0].style.transform="translateY(70px)";
         textoP[0].style.transform="translateY(70px)";
         signoMas[0].classList.add("hidden");
@@ -152,7 +152,7 @@ signoMenos[0].addEventListener("click", function(){
 
 
     signoMas[1].addEventListener("click", function(){
-        tituloMas[1].style.transform="scaleX(1) translate(-300px)";
+        tituloMas[1].style.transform="scaleX(1) translate(-1000px)";
         textoH4[1].style.transform="translateY(0px)";
         textoP[1].style.transform="translateY(0px)";
         signoMas[1].classList.add("hidden");
@@ -177,7 +177,7 @@ signoMenos[0].addEventListener("click", function(){
     signoMas[2].addEventListener("click", function(){
         let windowInnerWidth= window.innerWidth;
         if(windowInnerWidth>750){
-        tituloMas[2].style.transform="scaleX(1) translate(-300px)";
+        tituloMas[2].style.transform="scaleX(1) translate(-1000px)";
         textoH4[2].style.transform="translateY(90px)";
         textoP[2].style.transform="translateY(90px)";
         signoMas[2].classList.add("hidden");
@@ -210,7 +210,7 @@ signoMenos[0].addEventListener("click", function(){
     
 
     signoMas[3].addEventListener("click", function(){
-        tituloMas[3].style.transform="scaleX(1) translate(-300px)";
+        tituloMas[3].style.transform="scaleX(1) translate(-1000px)";
         textoH4[3].style.transform="translateY(90px)";
         textoP[3].style.transform="translateY(90px)";
         signoMas[3].classList.add("hidden");
@@ -237,7 +237,7 @@ signoMenos[0].addEventListener("click", function(){
     signoMas[4].addEventListener("click", function(){
         let windowInnerWidth= window.innerWidth;
         if(windowInnerWidth>750){
-        tituloMas[4].style.transform="scaleX(1) translate(-300px)";
+        tituloMas[4].style.transform="scaleX(1) translate(-600px)";
         textoH4[4].style.transform="translateY(120px)";
         textoP[4].style.transform="translateY(120px)";
         signoMas[4].classList.add("hidden");

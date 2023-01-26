@@ -136,7 +136,7 @@ flechaCarruselMover2.addEventListener("click",function(){
 getGaleria.forEach((element,index)=>{
     element.addEventListener("click",function(){
         
-            carrusel.innerHTML=" <div class=slide><img  loading=lazy src=img/miralagoPotrerillos/ObraMiralago1_big.jpg alt=bicisenda></div><div class=slide><img   loading=lazy src=img/miralagoPotrerillos/ObraMiralago2_big.jpg alt=ju></div><div class=slide><img   loading=lazy src=img/miralagoPotrerillos/ObraMiralago3_big.jpg alt=teni></div><div class=slide><img loading=lazy src=img/miralagoPotrerillos/ObraMiralago4_big.jpg alt=tenis></div><div class=slide><img  loading=lazy src=img/miralagoPotrerillos/ObraMiralago5_big.jpg alt=juegos></div><div class=slide><img  loading=lazy src=img/miralagoPotrerillos/ObraMiralago6_big.jpg alt=bicisenda></div>"
+            carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_11.jpg alt=bicisenda></div><div class=slide><img   loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_21.jpg alt=ju></div><div class=slide><img   loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_31.jpg alt=teni></div><div class=slide><img loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_41.jpg alt=tenis></div><div class=slide><img  loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_51.jpg alt=juegos></div><div class=slide><img  loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_61.jpg alt=bicisenda></div>"
             
             currentIndex=index
             aplicar();
@@ -162,6 +162,286 @@ oscuroCarruselCruz.addEventListener("click",function(){
 
 })
 
+//mapa viamonte
+
+let camera1= document.querySelector("#camera11")
+let camera2= document.querySelector("#camera22")
+let camera3= document.querySelector("#camera33")
+let camera4= document.querySelector("#camera44")
+let camera5= document.querySelector("#camera55")
+let camera6= document.querySelector("#camera66")
+let camera7= document.querySelector("#camera77")
+let camera8= document.querySelector("#camera88")
+let portal= document.querySelector("#estacionamiento11")
+let lodge= document.querySelector("#lodge11")
+let muelle2= document.querySelector("#muelle11")
+let mirador= document.querySelector("#mirador11")
+let puente= document.querySelector("#puente11")
+let juego= document.querySelector("#juego11")
+let voley= document.querySelector("#voley11")
+let plato= document.querySelector("#plato11")
+let pileta= document.querySelector("#pileta11")
+let muelle= document.querySelector("#barco11")
+let paragua= document.querySelector("#paragua11")
+
+
+
+
+
+
+lodge.addEventListener("click",function(){
+    
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_61.jpg alt=parqueLago></div><div class=slide> <img  loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_11.jpg alt=parqueLago> </div>"
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+  currentIndex=0
+  aplicar();
+  flechaCarruselMover.classList.remove("hidden")
+  flechaCarruselMover2.classList.remove("hidden")
+})
+
+puente.addEventListener("click",function(){
+    
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/MIRALAGO10.jpg alt=parqueLago> </div>"
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+    currentIndex=0
+    aplicar();
+    
+})
+plato.addEventListener("click",function(){
+    
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/MIRALAGO9.jpg alt=parqueLago> </div>"
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+  currentIndex=0
+  aplicar();
+  
+})
+juego.addEventListener("click",function(){
+    
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/MIRALAGO9.jpg alt=parqueLago> </div>"
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+  currentIndex=0
+  aplicar();
+  
+})
+voley.addEventListener("click",function(){
+    
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/MIRALAGO9.jpg alt=parqueLago> </div>"
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+  currentIndex=0
+  aplicar();
+  
+})
+pileta.addEventListener("click",function(){
+    
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/MIRALAGO9.jpg alt=parqueLago> </div>"
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+  currentIndex=0
+  aplicar();
+  
+})
+mirador.addEventListener("click",function(){
+    
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/MIRALAGO7.jpg alt=parqueLago> </div>"
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+  currentIndex=0
+  aplicar();
+  
+})
+portal.addEventListener("click",function(){
+    
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/MIRALAGO6.jpg alt=parqueLago> </div>"
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+  currentIndex=0
+  aplicar();
+  
+})
+muelle2.addEventListener("click",function(){
+    
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/MIRALAGO5.jpg alt=parqueLago> </div>"
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+  currentIndex=0
+  aplicar();
+  
+})
+muelle.addEventListener("click",function(){
+    
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/home/miralago2.jpg alt=parqueLago> </div>"
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+  currentIndex=0
+  aplicar();
+  
+})
+paragua.addEventListener("click",function(){
+    
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/MIRALAGO8.jpg alt=parqueLago> </div>"
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+  currentIndex=0
+  aplicar();
+  
+})
+
+
+
+
+camera1.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/miralagoPotrerillos/Miralago6.jpg alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+camera6.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_51.jpg alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+camera7.addEventListener("click",function(){
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  carrusel.innerHTML="<div class=slide><img loading=lazy src=img/miralagoPotrerillos/MIRALAGO3.jpg alt=barrio></div>"
+  currentIndex=0
+  aplicar();
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+})
+camera8.addEventListener("click",function(){
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  carrusel.innerHTML="<div class=slide><img loading=lazy src=img/miralagoPotrerillos/MIRALAGO5.jpg alt=barrio></div>"
+  currentIndex=0
+  aplicar();
+  mapaTrue.classList.remove("hidden")
+  mapaFalse.classList.add("hidden")
+  oscuroCarrusel.classList.remove("hidden")
+  let html=document.querySelector("html")
+  carrusel.classList.remove("hidden");
+  html.style.overflowY="hidden"
+})
+camera2.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_41.jpg alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+camera3.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/miralagoPotrerillos/Obra_Miralago_31.jpg alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+camera4.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/home/miralago2.jpg alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+camera5.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/miralagoPotrerillos/MIRALAGO5.jpg alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
 
 
 

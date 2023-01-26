@@ -206,7 +206,7 @@ flechaCarruselMover2.addEventListener("click",function(){
 getGaleria.forEach((element,index)=>{
     element.addEventListener("click",function(){
         
-            carrusel.innerHTML="<div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/ciclovia.svg alt=bicisenda></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/bike.svg alt=juegosdeniños></div> <div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/tenis.svg alt=tenisemesa></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/tenis2.svg alt=tenisdemesa></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/bike2.svg alt=juegosdeniños></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/ciclovia2.svg alt=bicisenda></div>"
+            carrusel.innerHTML="<div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/Obra_Viamonte_1.jpg alt=bicisenda></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/Obra_Viamonte_2.jpg alt=juegosdeniños></div> <div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/Obra_Viamonte_3.jpg alt=tenisemesa></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/Obra_Viamonte_4.jpg alt=tenisdemesa></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/Obra_Viamonte_5.jpg alt=juegosdeniños></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/Obra_Viamonte_6.jpg alt=bicisenda></div>"
             
             currentIndex=index
             aplicar();
@@ -234,6 +234,12 @@ oscuroCarruselCruz.addEventListener("click",function(){
 
 //mapa viamonte
 let mapaBeach= document.querySelector("#mapaBeach")
+let camera1= document.querySelector("#camera1")
+let camera2= document.querySelector("#camera2")
+let camera3= document.querySelector("#camera3")
+let camera4= document.querySelector("#camera4")
+let camera5= document.querySelector("#camera5")
+let camera6= document.querySelector("#camera6")
 let mapaBeach2= document.querySelector("#mapaBeach2")
 let mapaIsla= document.querySelector("#mapaIsla")
 let mapaJuegoInfantilNorte= document.querySelector("#mapaJuegoInfantil")
@@ -516,8 +522,84 @@ diamante.addEventListener("click",function(){
     carrusel.classList.remove("hidden");
     html.style.overflowY="hidden"
 })
-
-
+camera1.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/4.webp alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+camera6.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/5.webp alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+camera2.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/3.webp alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+camera3.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/2.webp alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+camera4.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/1.jpg alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
+camera5.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/7.webp alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
   // set up our state
   let isDragging = false,
   startPos = 0,
