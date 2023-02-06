@@ -921,6 +921,14 @@ h1:hover{
      width: 264px;
      overflow-y: hidden;
   }
+  #rome div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    width: 264px;
+    overflow-y: hidden;
+ }
   .paquete div div div p{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -932,7 +940,11 @@ h1:hover{
     font-size: 16px;
     line-height: 24px;
   }
-  
+  #rome div div h2{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
   .paquete div div div{
     display: flex;
      align-items: flex-start;
@@ -943,7 +955,22 @@ h1:hover{
   .paquete #paqueteFlex{
       display: flex;
       margin-bottom: 40px;
+      flex-wrap: wrap;
      
+  }
+  #rome div div{
+    display: flex;
+     align-items: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+    overflow-y: hidden;
+  }
+  #rome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
   }
 .paquete{
     margin: 100px auto;
@@ -1010,83 +1037,83 @@ h1:hover{
     background-color: black;
 }
 #mapaInteractivo #diamante{
-    top:475px;
-    left:200px;
-    width: 280px;
+    top:500px;
+    left:360px;
+    width: 100px;
 }
 #mapaInteractivo #mapaJuegoInfantil{
-    top:400px;
-    left:490px;
+    top:420px;
+    left:470px;
 }
 #mapaInteractivo #mapaJuegoInfantil2{
-    top:840px;
-    left:635px;
+    top:810px;
+    left:585px;
 }
 #mapaInteractivo #mapaJuegoInfantil3{
-    top:600px;
-    left:200px;
+    top:560px;
+    left:180px;
 }
 #mapaInteractivo #mapaJuegoInfantil4{
-    top:180px;
-    left:735px;
-    width: 280px;
+    top:280px;
+    left:715px;
+    width: 100px;
     text-align: left;
 }
 #mapaInteractivo #mapaBicisenda{
-    top:900px;
-    left:375px;
+    top:780px;
+    left:270px;
 }
 #mapaInteractivo #mapaBicisenda2{
-    top:130px;
-    left:590px;
+    top:640px;
+    left:670px;
    
 }
 #mapaInteractivo #mapaBicisenda3{
     top:500px;
     left:790px;
-    width: 200px;
+    width: 0px;
    
 }
 #mapaInteractivo #mapaBeach{
-    top:615px;
-    left:275px;
+    top:655px;
+    left:160px;
 }
 #mapaInteractivo #mapaBeach2{
-    top:745px;
-    left:245px;
+    top:775px;
+    left:185px;
 }
 #mapaInteractivo #mapaFitnes{
-    top:985px;
-    left:385px;
-    width: 250px;
+    top:935px;
+    left:305px;
+    width: 100px;
 }
 #mapaInteractivo #camera1{
     top:330px;
-    left:855px;
+    left:805px;
     background-color: #1A11AB;
 }
 #mapaInteractivo #camera1:hover{
     background-color: #0085FF;
 }
 #mapaInteractivo #camera2{
-    top:935px;
-    left:315px;
+    top:985px;
+    left:245px;
     background-color: #1A11AB;
 }
 #mapaInteractivo #camera2:hover{
     background-color: #0085FF;
 }
 #mapaInteractivo #camera3{
-    top:665px;
-    left:190px;
+    top:635px;
+    left:340px;
     background-color: #1A11AB;
 }
 #mapaInteractivo #camera3:hover{
     background-color: #0085FF;
 }
 #mapaInteractivo #camera4{
-    top:745px;
-    left:180px;
+    top:725px;
+    left:140px;
     background-color: #1A11AB;
 }
 #mapaInteractivo #camera4:hover{
@@ -1102,11 +1129,20 @@ h1:hover{
 }
 #mapaInteractivo #camera6{
     top:35px;
-    left:725px;
+    left:525px;
     background-color: #1A11AB;
   
 }
 #mapaInteractivo #camera6:hover{
+    background-color: #0085FF;
+}
+#mapaInteractivo #camera7{
+    top:545px;
+    left:515px;
+    background-color: #1A11AB;
+  
+}
+#mapaInteractivo #camera7:hover{
     background-color: #0085FF;
 }
 #mapaInteractivo #camera11{
@@ -1218,67 +1254,66 @@ h1:hover{
     left:165px;
 }
 #mapaInteractivo #mapaAjedrez{
-    top:940px;
-    left:430px;
-    width: 250px;
+    top:910px;
+    left:450px;
+    width: 100px;
 }
 #mapaInteractivo #mapaTenis{
-    top:890px;
-    left:520px;
-    width: 280px;
+    top:860px;
+    left:510px;
+    width: 100px;
 }
 #mapaInteractivo #mapaSkatePark{
     top:750px;
-    left:645px;
-    width: 280px;
+    left:605px;
+    width: 100px;
 }
 #mapaInteractivo #mapaPolifuncional{
     top:690px;
-    left:745px;
-    width: 260px;
+    left:665px;
+    width: 100px;
 }
 #mapaInteractivo #mapaMiniGolf{
     top:640px;
-    left:745px;
-    width: 250px;
+    left:705px;
+    width: 100px;
 }
 #mapaInteractivo #mapaTree{
     top:520px;
-    left:80px;
-    width: 200px;
-    z-index: 3;
+    left:220px;
+    width: 100px;
    
 }
 #mapaInteractivo #mapaBosqueSur{
-    top:810px;
-    left:80px;
-    width: 280px;
+    top:840px;
+    left:240px;
+    width: 100px;
 }
 #mapaInteractivo #mapaParqueMayor{
-    top:810px;
-    left:700px;
-    width: 210px;
+    top:750px;
+    left:736px;
+    width: 100px;
    
 }
 #mapaInteractivo #mapaParqueNorte{
-    top:120px;
-    left:730px;
+    top:212px;
+    left:633px;
     width: 280px;
     text-align: left;
     
    
 }
 #mapaInteractivo #mapaIsla{
-    top:350px;
-    left:415px;
-    width: 280px;
+    top:380px;
+    left:495px;
+    width: 100px;
     text-align: left;
     
    
 }
 #mapaInteractivo #mapaTree div{
-    width: 65px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
 }
 
 #mapaInteractivo .paquetito div{
@@ -1715,4 +1750,21 @@ footer{
 
 .rome .slide img{
     width: auto;
+}
+
+#paqueteFlex #transf img{
+    transform: scale(1.2);
+}
+#paqueteFlex #transf div h2{
+font-size: 15px;
+}
+#rome #transf img{
+    transform: scale(1.2);
+}
+#rome #transf div h2{
+font-size: 14px;
+}
+#parqueZoom{
+    width: 120px;
+    height: 120px;
 }

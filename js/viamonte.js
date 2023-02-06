@@ -240,6 +240,8 @@ let camera3= document.querySelector("#camera3")
 let camera4= document.querySelector("#camera4")
 let camera5= document.querySelector("#camera5")
 let camera6= document.querySelector("#camera6")
+let camera7= document.querySelector("#camera7")
+
 let mapaBeach2= document.querySelector("#mapaBeach2")
 let mapaIsla= document.querySelector("#mapaIsla")
 let mapaJuegoInfantilNorte= document.querySelector("#mapaJuegoInfantil")
@@ -258,7 +260,7 @@ let mapaJuegoInfantilNorEste= document.querySelector("#mapaJuegoInfantil4")
 let mapaParqueNorte= document.querySelector("#mapaParqueNorte")
 mapaParqueNorte.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/parquenorte_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/parquenorte_2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/parquenorte_3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/5.webp alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -267,12 +269,11 @@ mapaParqueNorte.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+    
 })
 mapaJuegoInfantilNorEste.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/juegoInfantilNorEste1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantilNorEste2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantilNorEste3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/Mapa_JuegodeNinos_A-B-C.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -281,12 +282,11 @@ mapaJuegoInfantilNorEste.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+
 })
 mapaMinigolf.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/minigolf_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/minigolf_2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/minigolf_3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/Mapa_Minigolf.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -295,12 +295,11 @@ mapaMinigolf.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+   
 })
 mapaPolifuncional.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/cancha_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/cancha_2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/cancha_3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/Mapa_CanchaPolifuncion.jpg alt=parqueLago></div><div class=slide>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -309,12 +308,11 @@ mapaPolifuncional.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+  
 })
 mapaSkatePark.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/skatepark_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/skatepark_2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/skatepark_3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/skatepark_1.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -323,12 +321,11 @@ mapaSkatePark.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+    
 })
 mapaParqueMayor.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/parque-mayor.jpg alt=laguna></div>"
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/8.webp alt=laguna></div>"
     currentIndex=0
     aplicar();
     mapaTrue.classList.remove("hidden")
@@ -340,7 +337,7 @@ mapaParqueMayor.addEventListener("click",function(){
 })
 mapaJuegoSur.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/juegoInfantilSur.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantilSur2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantilSur3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/Mapa_JuegodeNinos_D.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -349,13 +346,12 @@ mapaJuegoSur.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+   
     
 })
 mapaTenis.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/tennis_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/tennis_2.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/tennis_3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/tennis_1.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -364,13 +360,12 @@ mapaTenis.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+
     
 })
 mapaAjedrez.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/ajedrez_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/ajedrez_2.jpg alt=parqueLago></div><div class=slide><img id=cambioImagen loading=lazy src=img/viamonte/ajedrez_3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/Mapa_Ajedrez.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -379,13 +374,12 @@ mapaAjedrez.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+   
     
 })
 mapaFitnes.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/fitness_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/fitness_2.jpg alt=parqueLago></div><div class=slide><img  loading=lazy src=img/viamonte/fitness_3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/fitness_1.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -394,8 +388,7 @@ mapaFitnes.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+ 
     
 })
 mapaParqueSur.addEventListener("click",function(){
@@ -415,7 +408,7 @@ mapaParqueSur.addEventListener("click",function(){
 })
 mapaJuegoInfantilOest.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/juegoInfantilOest1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantilOest2.jpg alt=parqueLago></div><div class=slide><img  loading=lazy src=img/viamonte/juegoInfantilOest3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/Mapa_JuegodeNinos_A-B-C.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -424,13 +417,11 @@ mapaJuegoInfantilOest.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
-    
+   
 })
 mapaParqueLago.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/parquelago_1.jpg alt=parqueLago></div><div class=slide><img loading=lazy src=img/viamonte/parquelago_2.jpg alt=parqueLago></div><div class=slide><img  loading=lazy src=img/viamonte/parquelago_3.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/10.svg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -445,7 +436,7 @@ mapaParqueLago.addEventListener("click",function(){
 })
 mapaJuegoInfantilNorte.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/juegoInfantileNorte.jpg alt=juegoInfantil></div><div class=slide><img loading=lazy src=img/viamonte/juegoInfantileNorte2.jpg alt=juegoInfantil></div><div class=slide><img  loading=lazy src=img/viamonte/juegoInfantileNorte3.jpg alt=juegoInfantil></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/Mapa_JuegodeNinos_A-B-C.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -454,13 +445,11 @@ mapaJuegoInfantilNorte.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
-    
+   
 })
 mapaIsla.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/parqueIsla1.jpg alt=parqueisla></div><div class=slide><img  loading=lazy src=img/viamonte/parqueIsla2.jpg alt=parqueisla></div><div class=slide><img  loading=lazy src=img/viamonte/parqueIsla3.jpg alt=parqueisla></div>"
+    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/parqueIsla2.jpg alt=parqueisla></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -469,13 +458,12 @@ mapaIsla.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+   
     
 })
 mapaBeach.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/10.svg alt=laguna></div>"
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/laguna2.jpg alt=laguna></div>"
     currentIndex=0
     aplicar();
     mapaTrue.classList.remove("hidden")
@@ -548,6 +536,19 @@ camera6.addEventListener("click",function(){
     carrusel.classList.remove("hidden");
     html.style.overflowY="hidden"
 })
+camera7.addEventListener("click",function(){
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/Mapa_Camara7.jpg alt=barrio></div>"
+    currentIndex=0
+    aplicar();
+    mapaTrue.classList.remove("hidden")
+    mapaFalse.classList.add("hidden")
+    oscuroCarrusel.classList.remove("hidden")
+    let html=document.querySelector("html")
+    carrusel.classList.remove("hidden");
+    html.style.overflowY="hidden"
+})
 camera2.addEventListener("click",function(){
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
@@ -564,7 +565,7 @@ camera2.addEventListener("click",function(){
 camera3.addEventListener("click",function(){
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
-    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/2.webp alt=barrio></div>"
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/9.webp alt=barrio></div>"
     currentIndex=0
     aplicar();
     mapaTrue.classList.remove("hidden")
@@ -590,7 +591,7 @@ camera4.addEventListener("click",function(){
 camera5.addEventListener("click",function(){
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
-    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/7.webp alt=barrio></div>"
+    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/2.webp alt=barrio></div>"
     currentIndex=0
     aplicar();
     mapaTrue.classList.remove("hidden")
