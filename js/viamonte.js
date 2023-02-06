@@ -430,8 +430,7 @@ mapaParqueLago.addEventListener("click",function(){
     html.style.overflowY="hidden"
     currentIndex=0
     aplicar();
-    flechaCarruselMover.classList.remove("hidden")
-    flechaCarruselMover2.classList.remove("hidden")
+   
     
 })
 mapaJuegoInfantilNorte.addEventListener("click",function(){

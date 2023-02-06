@@ -527,14 +527,14 @@ h1:hover{
     transition: all 0.8s ease-in-out;
     z-index: 213213123;
     background-color: rgba(0,0,0,0.5);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0.5px);
     border: solid 2.5px gray;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .flecha:hover{
-    background-color: #0085FF;
+    opacity: 0.8;
 }
 
 
@@ -1362,7 +1362,7 @@ h1:hover{
 /* galeriaViamont*/
 
 .viamonteGaleria{
-  transform: scaleY(1.05);
+ /* transform: scaleY(1.05);*/
 }
 .viamonteGaleria2{
     transform: scaleX(1.006);
@@ -1649,7 +1649,7 @@ footer h5{
 }
 
 .fixedBlack{
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.30);
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -1730,7 +1730,7 @@ footer{
     }
 
     .miralagoo{
-        transform: scale(0.5);
+        transform: scale(1);
         left: 22%;
         right: 22%;
         bottom: 5%;
@@ -1765,6 +1765,46 @@ font-size: 15px;
 font-size: 14px;
 }
 #parqueZoom{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 80px;
+}
+.marginBottomRom{
+    margin-bottom: 20px !important;
+}
+
+.wppRom{
+    position: fixed;
+    z-index: 2221312;
+    bottom: 84px;
+    right:14px;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   transform: scale(1.05);
+    border-radius: 50%;
+
+}
+
+
+
+.wppRom:hover{
+  opacity: 0.8;
+
+}
+
+@media all and (max-width:900px){
+
+    .wppRom svg{
+        
+        width: 44px;
+        height: 44px;
+    
+    }
+    .wppRom{
+        
+        bottom: 70px;
+        right:1px;
+    }
 }
