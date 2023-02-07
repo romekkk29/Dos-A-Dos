@@ -1747,6 +1747,12 @@ footer{
         right: 22%;
         bottom: 10%;
     }
+    .logoRome3{
+        transform: scale(0.9);
+        left: 22%;
+        right: 22%;
+        bottom: 10%;
+    }
    
 }
 #paqueteFlex div img{
