@@ -547,7 +547,7 @@ h1:hover{
     width: 517px;
     right:0px ;
     transition: all 0.8s ease-in;
-    border-radius: 20px;
+    border-radius: 5px;
     z-index: 13;
     height: 300px;
     bottom: 200px;
@@ -1723,10 +1723,10 @@ footer{
         display: none;
     }
     .logoViamontee{
-        transform: scale(1);
+        transform: scale(0.88);
         left: 22%;
         right: 22%;
-        bottom: 15%;
+        bottom: 10%;
     }
 
     .miralagoo{
@@ -1734,6 +1734,18 @@ footer{
         left: 26%;
         right: 20%;
         bottom: 5%;
+    }
+    .logoRome{
+        transform: scale(1.15);
+        left: 22%;
+        right: 22%;
+        bottom: 15%;
+    }
+    .logoRome2{
+        transform: scale(1.15);
+        left: 22%;
+        right: 22%;
+        bottom: 10%;
     }
    
 }
