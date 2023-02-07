@@ -1723,16 +1723,16 @@ footer{
         display: none;
     }
     .logoViamontee{
-        transform: scale(0.5);
+        transform: scale(1);
         left: 22%;
         right: 22%;
         bottom: 15%;
     }
 
     .miralagoo{
-        transform: scale(1);
-        left: 22%;
-        right: 22%;
+        transform: scale(0.77);
+        left: 26%;
+        right: 20%;
         bottom: 5%;
     }
    
