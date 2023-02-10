@@ -297,7 +297,7 @@ portal.addEventListener("click",function(){
 })
 muelle2.addEventListener("click",function(){
     
-  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/Miralago_PaseoCostero.jpg alt=parqueLago> </div>"
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/miralagoPotrerillos/Miralago_PaseoCostero.JPG alt=parqueLago> </div>"
   mapaTrue.classList.remove("hidden")
   mapaFalse.classList.add("hidden")
   oscuroCarrusel.classList.remove("hidden")
@@ -310,7 +310,7 @@ muelle2.addEventListener("click",function(){
 })
 muelle.addEventListener("click",function(){
     
-  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/home/MIRALAGO2.jpg alt=parqueLago> </div>"
+  carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/home/miralago2.jpg alt=parqueLago> </div>"
   mapaTrue.classList.remove("hidden")
   mapaFalse.classList.add("hidden")
   oscuroCarrusel.classList.remove("hidden")
