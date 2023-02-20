@@ -260,7 +260,7 @@ let mapaJuegoInfantilNorEste= document.querySelector("#mapaJuegoInfantil4")
 let mapaParqueNorte= document.querySelector("#mapaParqueNorte")
 mapaParqueNorte.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/5.webp alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img id='topRom' loading=lazy src=img/viamonte/Mapa_Norte.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -351,7 +351,7 @@ mapaJuegoSur.addEventListener("click",function(){
 })
 mapaTenis.addEventListener("click",function(){
     
-    carrusel.innerHTML="<div class=slide><img  loading=lazy src=img/viamonte/tennis_1.jpg alt=parqueLago></div>"
+    carrusel.innerHTML="<div class=slide><img id='topRom2' loading=lazy src=img/viamonte/tennis_1.jpg alt=parqueLago></div>"
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
     oscuroCarrusel.classList.remove("hidden")
@@ -512,7 +512,7 @@ diamante.addEventListener("click",function(){
 camera1.addEventListener("click",function(){
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
-    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/4.webp alt=barrio></div>"
+    carrusel.innerHTML="<div class=slide><img id='topRom' loading=lazy src=img/viamonte/4.webp alt=barrio></div>"
     currentIndex=0
     aplicar();
     mapaTrue.classList.remove("hidden")
@@ -525,7 +525,7 @@ camera1.addEventListener("click",function(){
 camera6.addEventListener("click",function(){
     mapaTrue.classList.remove("hidden")
     mapaFalse.classList.add("hidden")
-    carrusel.innerHTML="<div class=slide><img loading=lazy src=img/viamonte/5.webp alt=barrio></div>"
+    carrusel.innerHTML="<div class=slide><img id='topRom2' loading=lazy src=img/viamonte/5.webp alt=barrio></div>"
     currentIndex=0
     aplicar();
     mapaTrue.classList.remove("hidden")

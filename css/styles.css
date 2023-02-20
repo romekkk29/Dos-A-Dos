@@ -315,10 +315,10 @@ h1:hover{
     background-image: url("../img/viamonte/2.webp");
 }
 .home2{
-    background-image: url("../img/home/miralago2.jpg");
+    background-image: url("../img/miralagoPotrerillos/MIRALAGO1.jpg");
 }
 .home3{
-    background-image: url("../img/home/vistalba.jpg");
+    background-image: url("../img/vistalba/vistalba6.jpg");
 }
 .home5{
     background-image: url("../img/home/almendras.jpg");
@@ -1826,3 +1826,120 @@ font-size: 14px;
         right:1px;
     }
 }
+
+#romell{
+    object-fit: unset !important;
+}
+
+
+
+@media all and (max-width:900px){
+#romell{
+    object-fit: cover !important;
+}
+}
+
+#romelala{
+    object-position: right bottom;
+}
+
+#scaleRom{
+    transform: scale(1.6) !important;
+}
+
+#topRom{
+    object-position: top center !important;
+}
+#topRom2{
+    object-position: center center !important;
+}
+#scaleRom2 img{
+    transform: scale(1.45) !important;
+}
+
+#planoSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    margin-bottom: 150px;
+}   
+#plano{
+    transform:scale(0.7) !important;
+}
+
+@media all and (max-width:900px){
+    #planoSection{
+        justify-content: unset;
+        flex-direction: unset;
+        align-items: unset;
+        height: 400px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: unset;
+    }   
+    #plano{
+        transform:scale(0.7) !important;
+    }
+    }
+
+#planoSection2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 800px;
+        margin-bottom: 150px;
+    }   
+    #plano2{
+
+    }
+    
+    @media all and (max-width:900px){
+        #planoSection2{
+            justify-content: center;
+            flex-direction: column;
+            align-items: unset;
+            height: 500px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-wrap: unset;
+        }   
+        #plano2{
+            transform:scale(0.9) !important;
+        }
+        }
+
+        #planoSection3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            height: 800px;
+            margin-bottom: 150px;
+        }   
+        #plano3{
+    
+        }
+        
+        @media all and (max-width:900px){
+            #planoSection3{
+                justify-content: center;
+                flex-direction: column;
+                align-items: unset;
+                height: 500px;
+                margin-bottom: 100px;
+                display: flex;
+                flex-wrap: unset;
+            }   
+            #plano3{
+                transform:scale(0.9) !important;
+            }
+            }
